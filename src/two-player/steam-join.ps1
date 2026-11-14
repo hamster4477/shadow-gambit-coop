@@ -52,7 +52,7 @@ Raw TCP is the default. No HTTPS subdomain needed. Check only for HTTPS tunnels.
     $join.Text = '通过此地址加入
 Join this address'
     $udpLabel=New-Object Windows.Forms.Label
-    $udpLabel.Text='UDP 地址不同才填 / Different UDP host:port (optional)'
+    $udpLabel.Text='UDP 地址（可选，填了减少卡顿）/ UDP host:port (optional, reduces stutter)'
     $udpLabel.Location=New-Object Drawing.Point(24,290)
     $udpLabel.Size=New-Object Drawing.Size(632,28)
     $form.Controls.Add($udpLabel)
@@ -65,9 +65,10 @@ Join this address'
         foreach($entry in $this.Tag){if($entry.Address -eq $selected){$this.FindForm().Controls['udpAddress'].Text=[string]$entry.UdpAddress;$this.FindForm().Controls['useHttps'].Checked=[bool]$entry.UseHttps;break}}
     })
     $udpHint=New-Object Windows.Forms.Label
-    $udpHint.Text='隧道本地目标 / Local tunnel targets: TCP + UDP 127.0.0.1:38479; HTTPS TCP :38477
-独立 TCP 模式留空自动探测 UDP / Raw TCP: blank probes UDP, with TCP fallback.'
-    $udpHint.Location=New-Object Drawing.Point(24,360);$udpHint.Size=New-Object Drawing.Size(632,48)
+    $udpHint.Text='隧道本地目标 TCP + UDP 127.0.0.1:38479，HTTPS 用 :38477
+UDP 能减少客机卡顿：丢一帧直接跳过，不等重传
+UDP cuts guest stutter: a lost frame is skipped instead of retransmitted.'
+    $udpHint.Location=New-Object Drawing.Point(24,360);$udpHint.Size=New-Object Drawing.Size(632,60)
     $udpHint.Font=New-Object Drawing.Font('Microsoft YaHei UI',9);$form.Controls.Add($udpHint)
     $join.Location = New-Object Drawing.Point(408,560)
     $join.Size = New-Object Drawing.Size(248,50)
@@ -75,7 +76,7 @@ Join this address'
     $status=New-Object Windows.Forms.TextBox
     $status.Name='joinStatus';$status.Multiline=$true;$status.ReadOnly=$true;$status.TabStop=$false;$status.BorderStyle="None";$status.ScrollBars="Vertical";$status.Text=if($Notice){$Notice}else{'请房主先创建房间。连接失败后保留输入，可直接重试。
 The host must create a room first. Your entries are kept if a retry is needed.'}
-    $status.Location=New-Object Drawing.Point(24,420);$status.Size=New-Object Drawing.Size(632,122)
+    $status.Location=New-Object Drawing.Point(24,432);$status.Size=New-Object Drawing.Size(632,122)
     $status.Font=New-Object Drawing.Font('Microsoft YaHei UI',9)
     $form.Controls.Add($status)
     $join.Add_Click({

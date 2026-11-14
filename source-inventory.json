@@ -1917,8 +1917,8 @@
     },
     {
       "file": "src/two-player/steam-join.ps1",
-      "bytes": 7711,
-      "sha256": "D07389A032828A06403E3547FD54536300F71ADB617277E45B264C50057A57C6"
+      "bytes": 7767,
+      "sha256": "B6FED1C625F31149EE4B4C43363275AEBF193F21009A1B9234E2F09EBDA906D2"
     },
     {
       "file": "src/two-player/steam-launch-common.ps1",

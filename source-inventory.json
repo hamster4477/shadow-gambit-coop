@@ -1372,8 +1372,8 @@
     },
     {
       "file": "src/two-player/Install-Dependencies.ps1",
-      "bytes": 10931,
-      "sha256": "A5471978EA38DF6FE32CFA21AAC1989907A04337902DB89B643260825AB91E5B"
+      "bytes": 11453,
+      "sha256": "1CEFF4013850BDEA30DA98C4A776B183CE61EDD28330BA0FDCBDD0717DF500BD"
     },
     {
       "file": "src/two-player/InteractionProtocol.cs",

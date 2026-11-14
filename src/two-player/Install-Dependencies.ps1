@@ -148,23 +148,32 @@ try{
             # Keep the player's config and installed plugins; take the new binaries.
             $keep=Join-Path $stage 'keep'
             [void][IO.Directory]::CreateDirectory($keep)
-            foreach($name in @('config','plugins','interop','unity-libs','cache')){
+            $preserved=New-Object System.Collections.ArrayList
+            foreach($name in @('config','plugins','interop','unity-libs','cache','chainloader')){
                 $path=Join-Path $existingBepInEx $name
-                if(Test-Path -LiteralPath $path){Move-Item -LiteralPath $path -Destination (Join-Path $keep $name) -Force}
+                if(!(Test-Path -LiteralPath $path)){continue}
+                Move-Item -LiteralPath $path -Destination (Join-Path $keep $name) -Force
+                [void]$preserved.Add($name)
             }
-            Move-Item -LiteralPath $existingBepInEx -Destination (Join-Path $backupRoot 'existing/BepInEx') -Force -ErrorAction SilentlyContinue
+            $oldBepInEx=Join-Path $backupRoot 'existing/BepInEx'
+            [void][IO.Directory]::CreateDirectory([IO.Path]::GetDirectoryName($oldBepInEx))
+            Move-Item -LiteralPath $existingBepInEx -Destination $oldBepInEx -Force
+            if(Test-Path -LiteralPath $existingBepInEx){
+                throw '无法移开旧 BepInEx 目录，已停止 / Could not move the existing BepInEx folder aside'
+            }
             Move-Item -LiteralPath $newBepInEx -Destination $existingBepInEx -Force
-            foreach($name in @('config','plugins','interop','unity-libs','cache')){
-                $path=Join-Path $keep $name
-                if(Test-Path -LiteralPath $path){
-                    $dest=Join-Path $existingBepInEx $name
-                    if(Test-Path -LiteralPath $dest){Remove-Item -LiteralPath $dest -Recurse -Force}
-                    Move-Item -LiteralPath $path -Destination $dest -Force
-                }
+            foreach($name in $preserved){
+                $from=Join-Path $keep $name
+                $dest=Join-Path $existingBepInEx $name
+                if(Test-Path -LiteralPath $dest){Remove-Item -LiteralPath $dest -Recurse -Force}
+                Move-Item -LiteralPath $from -Destination $dest -Force
             }
-            Say '  保留了原有 config / plugins / interop / unity-libs'
+            Say ('  保留了原有 / preserved: ' + (@($preserved) -join ', '))
         } else {
             Move-Item -LiteralPath $newBepInEx -Destination $existingBepInEx -Force
+        }
+        if(!(Test-Path -LiteralPath (Join-Path $game 'BepInEx/core/BepInEx.Core.dll'))){
+            throw '安装后找不到 BepInEx/core/BepInEx.Core.dll / Post-install check failed'
         }
         $dotnetNew=Join-Path $extract 'dotnet'
         if(Test-Path -LiteralPath $dotnetNew){

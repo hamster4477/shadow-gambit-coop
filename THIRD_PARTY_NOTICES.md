@@ -24,6 +24,12 @@ The MIT license in this repository covers independently authored project code. I
 | Python embedded Windows distribution | 3.13.9 | PSF-2.0 AND bundled third-party notices | [upstream 1](https://raw.githubusercontent.com/python/cpython/v3.13.9/LICENSE), [upstream 2](https://docs.python.org/3.13/license.html) |
 | Unity base libraries | Unity 2021.3.25 reference/base libraries | NOT CLEARED |  |
 
+## Bundled media / 内置媒体
+
+`src/two-player/media/bell_b.wav` is the default ping cue. It ships with this repository and inside the mod-only package at `ShadowGambitCoop/media/bell_b.wav`, but it is **not** part of the MIT-licensed source code. It may also be replaced: any 16-bit PCM WAV of the player's own choosing works, and the plugin stays silent with a single logged warning if the file is absent.
+
+`src/two-player/media/bell_b.wav` 是标点的默认提示音，随本仓库和纯模组包分发（安装后位于 `ShadowGambitCoop/media/bell_b.wav`），但**不属于** MIT 授权的源码部分。它可以替换：玩家可换成任意 16 位 PCM WAV；文件缺失时插件仅记录一次告警并静音。
+
 ## If redistributing dependencies / 如需打包第三方依赖
 
 - MIT/BSD-style components: keep their actual copyright and license texts; a link alone is not a substitute for required notices.

@@ -2,8 +2,8 @@
   "files": [
     {
       "file": ".gitattributes",
-      "bytes": 130,
-      "sha256": "3E39A381D4D97EB642B17946E9B301D7F7E4D6681F5AAE7678CD02553689BFFD"
+      "bytes": 144,
+      "sha256": "4F34732780080DF7239A0567CFADE777ED2CA98D6596C6F50B9B02AE64433ECC"
     },
     {
       "file": ".github/ISSUE_TEMPLATE/bug_report.yml",
@@ -12,8 +12,8 @@
     },
     {
       "file": ".gitignore",
-      "bytes": 541,
-      "sha256": "1654B7234217CFD4FD93ADE6D3616B57BC12C0AC96DE394775C77ABC32DA3E7B"
+      "bytes": 460,
+      "sha256": "46ACAA25E546A3B09358065F55B2D77540823824245D0AC2219EAC17ABEE318A"
     },
     {
       "file": "BUILDING.md",
@@ -42,13 +42,13 @@
     },
     {
       "file": "README.md",
-      "bytes": 5824,
-      "sha256": "2FD713517832C67A5869A9F302B3A947AE0ACD4C6C1200320484BFBF4EBBE171"
+      "bytes": 6022,
+      "sha256": "B8644F07E4D368C655708178CD7F758F9E27B87B2A1C566B5F186AF56F432CEF"
     },
     {
       "file": "README.zh-CN.md",
-      "bytes": 5076,
-      "sha256": "FE5A7A9D734C6E0A50C662A287ABE3A7A945CEE7584C7FAC753E28B434BB895B"
+      "bytes": 5245,
+      "sha256": "DB08D4594AFDBDB064E3F90C62EE520AD87412F20591BA7A53CA30B2AC321B91"
     },
     {
       "file": "RELEASE_REVIEW.md",
@@ -67,13 +67,13 @@
     },
     {
       "file": "THIRD_PARTY_NOTICES.md",
-      "bytes": 5711,
-      "sha256": "1C34F70D9CDACE724F246749FA9B65BD07C2BB95101C3017F697EAEBF8631386"
+      "bytes": 6443,
+      "sha256": "5928AE6B7E43B41A5EC7758751A70FDD163B6E68515BDB4378405BEBF2704AB0"
     },
     {
       "file": "VALIDATION.md",
-      "bytes": 9633,
-      "sha256": "B7091CD6B15334B2DA4F50B1B031A69F2F05058256391537181B6C3CC3B413FC"
+      "bytes": 10067,
+      "sha256": "6E7F06E0FD333189BE432947DAB9A4EBB8528F42857E705F9E3D4B534A0CB1AC"
     },
     {
       "file": "scripts/Build.ps1",
@@ -97,8 +97,8 @@
     },
     {
       "file": "scripts/package_mod.py",
-      "bytes": 3759,
-      "sha256": "8D39CC8CD241E183CE873F0BF11D6AA6A43EA8A23D86FECE656D19D988E340C8"
+      "bytes": 3767,
+      "sha256": "3DAF720C4BEA583E2E1B66C77B71E86523C1048FFCAF8CB154BDAF1DDE78C815"
     },
     {
       "file": "src/multiplayer/ActorOrderReceipt.cs",
@@ -1716,6 +1716,11 @@
       "sha256": "BDB092C110702341E5DADD34D1447312298438B6A87B04C584AB01AF5401D5A5"
     },
     {
+      "file": "src/two-player/media/bell_b.wav",
+      "bytes": 43670,
+      "sha256": "E50BEDDAA652DA1DBF53AD6FF5B37CE2BDE54C4AF3C7968D08BA5B1DB016EA87"
+    },
+    {
       "file": "src/two-player/native-ui-reference.json",
       "bytes": 2927,
       "sha256": "AE2BB836DA2959FDA4C54B3A297786014C8B47D9F14B5180D23747577B9BAFAF"
@@ -1737,8 +1742,8 @@
     },
     {
       "file": "src/two-player/runtime-files.json",
-      "bytes": 940,
-      "sha256": "D8A94548397A2838A9ACCC55DBD457837BE04FAF256D5D9A954B0A543528BFC5"
+      "bytes": 984,
+      "sha256": "B66BC8117B22208724F96A879B519B6450181AA7285BA6C89E36D688D413077D"
     },
     {
       "file": "src/two-player/save_transfer.py",
@@ -1922,8 +1927,8 @@
     },
     {
       "file": "src/two-player/test-ping-audio.ps1",
-      "bytes": 1788,
-      "sha256": "6BC1169EDBDC7776A1B2E39DE0ED055030D520DB523DF07BECDD3CDA9889AD41"
+      "bytes": 2075,
+      "sha256": "E2CCAA73317002786D2AEF6C450EA6E4CD88BF46018D076EC3A9FDEF024E20C4"
     },
     {
       "file": "src/two-player/test-ping-input.ps1",

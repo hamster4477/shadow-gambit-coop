@@ -1,12 +1,12 @@
 $ErrorActionPreference='Stop'
-# The bell WAV is a user-provided test sound and is NOT distributed under the MIT
-# grant, so this check only runs when someone drops their own copy in place.
+# The ping sound is replaceable. Whatever PCM16 WAV sits in media/ is decoded with the
+# production method, so replacing bell_b.wav validates your file instead of the original.
 $bell=Join-Path $PSScriptRoot 'media/bell_b.wav'
 if(!(Test-Path -LiteralPath $bell -PathType Leaf)){
-    'Skipped: media/bell_b.wav is not distributed with this repository. Add your own PCM16 bell WAV there to run this decode check.'
+    'Skipped: media/bell_b.wav is missing. Drop a PCM16 WAV there (mono or stereo) to run this decode check.'
     exit 0
 }
-$s=Get-Content (Join-Path $PSScriptRoot 'CoopPings.cs') -Raw
+$s=[IO.File]::ReadAllText((Join-Path $PSScriptRoot 'CoopPings.cs'))
 $start=$s.IndexOf('    private static AudioClip ReadBell(')
 $brace=$s.IndexOf('{',$start);$depth=1;$end=$brace+1
 while($depth -gt 0){if($s[$end] -eq '{'){$depth++};if($s[$end] -eq '}'){$depth--};$end++}
@@ -19,9 +19,18 @@ public class PingAudioTest {
 '@
 $fixture+=$method
 $fixture+=@'
- public static void Run(string path){var c=ReadBell(path);if(c.rate!=48000||c.channels!=1||c.frames!=21813||c.data.Length!=21813)throw new Exception("Bell metadata mismatch");bool sound=false;foreach(float s in c.data){if(!float.IsFinite(s)||Math.Abs(s)>1)throw new Exception("Invalid sample");if(Math.Abs(s)>.01)sound=true;}if(!sound)throw new Exception("Silent bell");}
+ public static string Run(string path){
+  var c=ReadBell(path);
+  if(c.rate<8000||c.rate>96000)throw new Exception("Unexpected sample rate");
+  if(c.channels<1||c.channels>2)throw new Exception("Unexpected channel count");
+  if(c.frames<1||c.data.Length!=c.frames*c.channels)throw new Exception("Sample count mismatch");
+  bool sound=false;
+  foreach(float s in c.data){if(!float.IsFinite(s)||Math.Abs(s)>1)throw new Exception("Invalid sample");if(Math.Abs(s)>.01)sound=true;}
+  if(!sound)throw new Exception("Silent bell");
+  return string.Format("{0} Hz, {1} channel(s), {2} frames, {3} samples",c.rate,c.channels,c.frames,c.data.Length);
+ }
 }
 '@
 Add-Type -TypeDefinition $fixture
-[PingAudioTest]::Run($bell)
-'Provided bell WAV decoded by production method: mono PCM16, 48kHz, 21813 valid non-silent samples. Playback needs game testing.'
+$info=[PingAudioTest]::Run($bell)
+"Ping sound decoded by the production method: $info. Replace media/bell_b.wav with any PCM16 WAV; playback still needs in-game testing."

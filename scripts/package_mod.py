@@ -23,7 +23,7 @@ for item in json.loads((source / 'runtime-files.json').read_text(encoding='utf-8
     path = PurePosixPath(item)
     if path.is_absolute() or '..' in path.parts or ':' in item or '\\' in item:
         raise ValueError('Unsafe runtime path')
-    if path.suffix not in ('.cs', '.ps1', '.py', '.vbs', '.cmd', '.json'):
+    if path.suffix not in ('.cs', '.ps1', '.py', '.vbs', '.cmd', '.json', '.wav'):
         raise ValueError('Unexpected runtime file type')
     payload['ShadowGambitCoop/' + item] = (build / item).read_bytes()
 payload['BepInEx/plugins/ShadowGambitCoop.MoveProbe.dll'] = (build / 'staging/ShadowGambitCoop.MoveProbe.dll').read_bytes()

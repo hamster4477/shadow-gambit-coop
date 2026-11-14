@@ -86,7 +86,19 @@ For a first multiplayer session use one host and two guests, then check exclusiv
 - LAN discovery: UDP **38478**. The Unity bridge uses loopback UDP **38476**.
 - Host first, then guests. A single room endpoint can serve multiple guests; separate tunnels per guest are unnecessary.
 
-Native TCP and UDP share the port number but are different protocols; TCP is not a drop-in substitute for UDP. When UDP is unavailable the state path falls back to TCP. Participants should run matching game versions and own the content the selected mission needs.
+Native TCP and UDP share the port number but are different protocols; TCP is not a drop-in substitute for UDP. Participants should run matching game versions and own the content the selected mission needs.
+
+### Why the state travels over UDP
+
+A state snapshot is a complete description of the current world and is replaced twenty times a second. If one is lost, the next one fifty milliseconds later supersedes it, so the state path drops the old one and moves on instead of retrying it.
+
+- **No head-of-line blocking.** On TCP one lost segment stalls every later snapshot until it is retransmitted. For data that expires in 50 ms, that turns a single loss into a visible freeze.
+- **No retransmission of stale data.** A resent snapshot describes a world that has already moved on; skipping to the newest frame is more accurate, not less.
+- **The cost:** UDP is unreliable by nature, so every snapshot is framed, size-bounded and validated, and anything malformed is discarded rather than applied.
+
+Player orders are the opposite case — a lost or reordered order changes the game — so they never use this socket. They stay on TCP, or on the HTTP/HTTPS path, where delivery is guaranteed and ordered.
+
+UDP is optional. If a tunnel or network blocks it, the state path also works over TCP: same result, with the stall behaviour above. Opening only native TCP is a supported configuration.
 
 ## License and release scope
 

@@ -2,6 +2,18 @@
 
 Checked through 2026-11-14 against the local reference installation. These results describe this source export, not a stable-release certification.
 
+## 2026-11-14 dependency installer / 依赖安装器
+
+- `Check-Environment.ps1` and `Install-Dependencies.ps1` are new. The installer downloads BepInEx `6.0.0-be.682` (IL2CPP win-x64) and CPython `3.13.9` embeddable, verifies pinned SHA-256 values, refuses archives containing absolute or `..` paths, extracts to a staging folder, backs up what it replaces, and rolls back on failure. Neither script writes saves or starts the game.
+- Pinned hashes were read from the published artifacts, not copied from a previous package: BepInEx `087B337D…6572C` (34,073,982 bytes) and CPython `91D828C2…402A` (10,926,675 bytes). The long-standing local `loader.zip` hashes to the **same** BepInEx value, which confirms the older full package used this exact official build.
+- Run in an isolated fake game folder: detection reported every missing item and exited 1; `-DryRun` changed nothing; installation from a local cache created `winhttp.dll`, `doorstop_config.ini`, `BepInEx/core`, `dotnet/` and a working embedded Python 3.13.9; the extracted `winhttp.dll` is byte-identical to the copy inside the official archive. A second run correctly reported "nothing to install" and exited 0.
+- A deliberately tampered Python archive was rejected with the expected and actual digests, the file was deleted, and no Python folder was created. Rollback left no partial files behind.
+- The real network branch was exercised once end to end (no cache): both downloads completed and the same files were installed in about 100 seconds.
+- Checking the real game installation returns ready: loader present, plugin present, 157 interop assemblies, 66 Unity libraries, bundled Python.
+- **Not tested:** a machine that has never had BepInEx, an actual game launch after installing, and BepInEx's own Unity-libraries download on first launch. Those need a clean machine and a real game start.
+
+新增的两个脚本已在隔离目录和真实游戏目录验证：检测、离线安装、真实下载、幂等重跑、篡改拒绝与回退均符合预期；同时确认旧 `loader.zip` 与官方 BepInEx 包同哈希。尚未在从未装过 BepInEx 的机器上真正启动游戏。
+
 ## 2026-11-14 version 0.8.42 / 标点功能与导出同步
 
 - The ping feature was ported from the finalized two-player working source without editing production code: `CoopPings.cs`, `PingWire.cs`, `CoopPingVisual.cs`, `ping_broker.py`, the three ping test scripts and `test_ping.py`. `MoveProbe.cs` and `lobby_broker.py` were replaced with their 0.8.42 versions; in `lobby_broker.py` the only difference from 0.8.41 is the `ping` operation routing and its import.

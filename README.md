@@ -23,6 +23,24 @@ The multiplayer variant has no fixed room cap, but practical capacity is limited
 
 The multiplayer transport was exercised with simulated clients, including 32 clients and 96 TCP channels. **This is not validation of 32 simultaneous game instances. Three-or-more-PC gameplay remains unverified.**
 
+## Install (players)
+
+Playing does not need the build toolchain. Close the game, extract the release ZIP into the game folder, then run:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\ShadowGambitCoop\Check-Environment.ps1
+```
+
+It reports what is present and what is missing. If BepInEx or Python is missing, install them once:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\ShadowGambitCoop\Install-Dependencies.ps1
+```
+
+That script downloads **only** BepInEx 6.0.0-be.682 (IL2CPP win-x64) from `builds.bepinex.dev` and CPython 3.13.9 embeddable from `python.org`, verifies pinned SHA-256 values before extracting, backs up anything it replaces, and rolls back on failure. It does not touch saves and does not start the game. This repository does **not** redistribute those binaries. Offline machines can pass `-OfflineCache <folder>` holding the two ZIPs.
+
+After the first launch, BepInEx fetches the Unity base libraries itself, so that first launch needs network once.
+
 ## Build
 
 Windows x64, PowerShell 7, a local game installation, and matching BepInEx/core, .NET runtime and locally generated BepInEx/interop references are required. Those binaries are **not included** in this repository. Obtain dependencies from their respective upstream projects and keep their notices.

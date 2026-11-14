@@ -1,4 +1,5 @@
 [
+  "Check-Environment.ps1",
   "Collect-Guest.cmd",
   "Collect-Host.cmd",
   "Setup-Steam.cmd",
@@ -7,6 +8,7 @@
   "control_file.py",
   "gateway_lifetime.py",
   "gateway_pairing.py",
+  "Install-Dependencies.ps1",
   "lan-discovery.py",
   "lan_remote.py",
   "lobby_broker.py",

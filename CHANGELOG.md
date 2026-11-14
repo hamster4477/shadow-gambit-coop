@@ -6,6 +6,7 @@ Release ordering on GitHub follows the commit a tag points at, not the upload ti
 
 | Version | Date | Contents |
 | --- | --- | --- |
+| `v0.8.43` | 2026-11-14 | Packaging only; the plugin is unchanged at 0.8.42. Adds `Check-Environment.ps1` and `Install-Dependencies.ps1`, which download BepInEx and CPython from their official sites, verify pinned hashes, back up and can roll back. |
 | `v0.8.42` | 2026-11-14 | Scene-scoped visual pings (one marker per player, five seconds, host cyan / guest amber, replaceable bell). Carries the 0.8.39 host-role, 0.8.40 checkpoint/rewind and 0.8.41 performance/enemy-view work. **No two-PC test yet.** |
 | `v0.8.41` | 2026-11-14 | Lower temporary allocations in UDP snapshot parsing, fewer unnecessary scene-loader lookups, observer-view handoff and stale facing fixes. Dense-scene paging limit remains. |
 | `v0.8.40` | 2026-11-14 | Checkpoint/rewind recovery, first-account live import, retryable result publication, launch-request retirement, installer process-lifecycle fix. |
@@ -31,6 +32,7 @@ GitHub 的发布列表按 tag 所指提交的时间排序，而不是上传时�
 
 | 版本 | 日期 | 内容 |
 | --- | --- | --- |
+| `v0.8.43` | 2026-11-14 | 仅打包变更，插件仍是 0.8.42。新增 `Check-Environment.ps1` 与 `Install-Dependencies.ps1`：从官方站点下载 BepInEx 与 CPython，校验固定哈希，覆盖前备份、失败可回退。 |
 | `v0.8.42` | 2026-11-14 | 场景内标点（每人一个、五秒、房主青色／客机橙色、提示音可替换）。包含 0.8.39 启动身份、0.8.40 接档／回档、0.8.41 性能与敌人视野修订。**尚无双机实测。** |
 | `v0.8.41` | 2026-11-14 | 减少 UDP 快照解析临时分配、减少无关场景加载器查找、修订发现视野接替与换场旧朝向。密集场景分页限制仍在。 |
 | `v0.8.40` | 2026-11-14 | 检查点／回档恢复、首次账号实时导入、可重试结果发布、启动请求清理、安装器进程生命周期修正。 |

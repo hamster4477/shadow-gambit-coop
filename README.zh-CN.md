@@ -23,6 +23,24 @@
 
 多人传输层用模拟客户端验证过，包括 32 个客户端和 96 条 TCP 通道。**这不等于验证了 32 个同时运行的游戏实例；三台以上实机游玩仍未验证。**
 
+## 安装（玩家）
+
+游玩不需要构建工具链。先退出游戏，把发布包的 ZIP 解压到游戏根目录，然后运行：
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\ShadowGambitCoop\Check-Environment.ps1
+```
+
+它会列出已具备和缺失的依赖。如果缺 BepInEx 或 Python，运行一次：
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\ShadowGambitCoop\Install-Dependencies.ps1
+```
+
+该脚本**只**从 `builds.bepinex.dev` 下载 BepInEx 6.0.0-be.682（IL2CPP win-x64）、从 `python.org` 下载 CPython 3.13.9 embeddable，解压前校验固定 SHA-256，覆盖前备份、失败回退。它不碰存档，也不启动游戏。本仓库**不再分发**这些二进制。离线机器可用 `-OfflineCache <目录>` 指向存放这两个 ZIP 的目录。
+
+首次启动后 BepInEx 会自行下载 Unity 基础库，因此首次启动需要联网一次。
+
 ## 构建
 
 需要 Windows x64、PowerShell 7、本机已安装的游戏，以及匹配的 BepInEx/core、.NET 运行时和本机生成的 BepInEx/interop 引用。这些二进制**不包含在本仓库中**，请从各自上游项目获取并保留其许可与声明。

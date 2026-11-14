@@ -39,11 +39,24 @@ for notice in ('LICENSE', 'README.md', 'THIRD_PARTY_NOTICES.md', 'RELEASE_REVIEW
 manifest = dict(buildId=name, dllSha256=plugin_hash, nativeGameplay='pending',
                 entries={key: sha(value) for key, value in payload.items()})
 payload['ShadowGambitCoop/unified-test-manifest.json'] = json.dumps(manifest, indent=2).encode('utf-8-sig')
-payload['INSTALL.txt'] = ('''Mod-only update / 仅模组更新
-Close the game on every PC. Extract into the game folder. Use the same build on all PCs.
-所有电脑退出游戏后解压到游戏目录，所有参与者必须使用相同构建。
-BepInEx, Doorstop, Python, .NET and Unity/game dependencies are NOT included.
-本包不含第三方运行环境或游戏资源，必须先准备匹配的依赖。
+payload['INSTALL.txt'] = ('''Shadow Gambit Co-op - mod-only package / 纯模组包
+
+1. Close the game on every PC. / 所有电脑先完全退出游戏。
+2. Extract this ZIP into the game folder. / 把本 ZIP 解压到游戏根目录。
+3. Check the environment / 检查环境:
+     powershell -NoProfile -ExecutionPolicy Bypass -File .\\ShadowGambitCoop\\Check-Environment.ps1
+4. Install anything missing, once / 缺依赖时运行一次:
+     powershell -NoProfile -ExecutionPolicy Bypass -File .\\ShadowGambitCoop\\Install-Dependencies.ps1
+   It downloads only BepInEx 6.0.0-be.682 and CPython 3.13.9 from their official sites,
+   verifies pinned SHA-256 values, backs up what it replaces and can roll back.
+   只从官方站点下载这两个依赖，校验固定哈希，覆盖前会备份并可回退。
+   Offline machines / 离线机器: -OfflineCache <folder holding those two ZIP files>
+5. Everyone must use the same build. / 所有参与者必须使用同一构建。
+
+BepInEx is not redistributed in this package; it is fetched from builds.bepinex.dev.
+本包不再分发 BepInEx，改为从官方站点获取。
+BepInEx downloads the Unity base libraries itself on the first game launch (needs network once).
+Unity 基础库由 BepInEx 在首次启动游戏时自行下载，需要联网一次。
 No saves or runtime/room history are included. See THIRD_PARTY_NOTICES and RELEASE_REVIEW.
 ''').encode('utf-8-sig')
 target = repo / 'artifacts' / f'ShadowGambitCoop-{name}-mod-only.zip'

@@ -21,6 +21,11 @@
       "sha256": "92D2008A5253C12D7984F90C2470DB3872623634241559069338B28584577E87"
     },
     {
+      "file": "CHANGELOG.md",
+      "bytes": 3319,
+      "sha256": "D2DDD830EFAF1783AEDACA21BF8CA2BB9D37EC074E11CC6F46A5E44B3D960489"
+    },
+    {
       "file": "CONTRIBUTING.md",
       "bytes": 1416,
       "sha256": "3544743B08C47DF7A523BA73309B2936DCF61C0E4A752DDAD9AD376FE6AAF911"
@@ -42,13 +47,13 @@
     },
     {
       "file": "README.md",
-      "bytes": 6061,
-      "sha256": "F11F6DE45ABDF7E5C243F2925D08AD250C74C2DE3A8E4732D4D6496062F6C8D1"
+      "bytes": 7079,
+      "sha256": "079B9758537FE8F640B37B377DE00537BF83FD7CBE51587433D36AD2CDBD5D0A"
     },
     {
       "file": "README.zh-CN.md",
-      "bytes": 5292,
-      "sha256": "B2A7687AFA47334CE03D49883A35E10236C705FA307FD4D8BDCAA1853103B041"
+      "bytes": 6220,
+      "sha256": "61DFFD5F75854F81B51D26BEE1E13803786CA4FB50B1C5C6D7BDF3C595E29F4A"
     },
     {
       "file": "RELEASE_REVIEW.md",
@@ -72,8 +77,8 @@
     },
     {
       "file": "VALIDATION.md",
-      "bytes": 10067,
-      "sha256": "6E7F06E0FD333189BE432947DAB9A4EBB8528F42857E705F9E3D4B534A0CB1AC"
+      "bytes": 12224,
+      "sha256": "769BD66FCE3080622D5EDBC4D12AD60C76A22A75D5C8C999FC907072E07D1FA6"
     },
     {
       "file": "scripts/Build.ps1",
@@ -97,8 +102,8 @@
     },
     {
       "file": "scripts/package_mod.py",
-      "bytes": 3767,
-      "sha256": "3DAF720C4BEA583E2E1B66C77B71E86523C1048FFCAF8CB154BDAF1DDE78C815"
+      "bytes": 4669,
+      "sha256": "307E4D5B3B8566BB3429FCDDCB2C69E017B8B83CF54C9E71C23199A82F693623"
     },
     {
       "file": "src/multiplayer/ActorOrderReceipt.cs",
@@ -1056,6 +1061,11 @@
       "sha256": "4AB5235F243C93013EC2F86C5D82E70AED9AF43767A68CDD9D8AE40E026E5D6E"
     },
     {
+      "file": "src/two-player/Check-Environment.ps1",
+      "bytes": 4599,
+      "sha256": "33FA1DC3240249E842515B784EC54D22630B0FC6AF89D295A1104C69CDCE8C2A"
+    },
+    {
       "file": "src/two-player/Collect-Guest.cmd",
       "bytes": 125,
       "sha256": "DAC5897CF48AD3B084B329ACE931A02D8170644C1C91E459820EEE6A9076A4C4"
@@ -1359,6 +1369,11 @@
       "file": "src/two-player/HostLoadingView.cs",
       "bytes": 1007,
       "sha256": "74B268DAF1239241D16CD9A7B5C883B7B610B7B1AB4A55C6228E10CE441E4F6E"
+    },
+    {
+      "file": "src/two-player/Install-Dependencies.ps1",
+      "bytes": 10931,
+      "sha256": "A5471978EA38DF6FE32CFA21AAC1989907A04337902DB89B643260825AB91E5B"
     },
     {
       "file": "src/two-player/InteractionProtocol.cs",
@@ -1742,8 +1757,8 @@
     },
     {
       "file": "src/two-player/runtime-files.json",
-      "bytes": 984,
-      "sha256": "B66BC8117B22208724F96A879B519B6450181AA7285BA6C89E36D688D413077D"
+      "bytes": 1043,
+      "sha256": "C18666CBA81BFD8CB0458DCBDF7CE3213AD247424CFE224E40CB7CF6760AF998"
     },
     {
       "file": "src/two-player/save_transfer.py",

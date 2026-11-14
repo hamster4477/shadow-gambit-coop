@@ -2,6 +2,17 @@
 
 Checked through 2026-11-14 against the local reference installation. These results describe this source export, not a stable-release certification.
 
+## 2026-11-14 version 0.8.42 / 标点功能与导出同步
+
+- The ping feature was ported from the finalized two-player working source without editing production code: `CoopPings.cs`, `PingWire.cs`, `CoopPingVisual.cs`, `ping_broker.py`, the three ping test scripts and `test_ping.py`. `MoveProbe.cs` and `lobby_broker.py` were replaced with their 0.8.42 versions; in `lobby_broker.py` the only difference from 0.8.41 is the `ping` operation routing and its import.
+- **A build from this exported layout reproduces the shipped plugin exactly**: 958,976 bytes, SHA-256 `73D790F1776B999B52BA35327D7925F997958D4571F908E6B77A48EE7AD1AF75`, identical to the DLL installed in the game and to the payload inside the 0.8.42 update package. The 89 native hook/signature checks and GUI launcher compilation passed.
+- Ping checks run from the exported layout: protocol and lifetime **60**, production input suppression **27**, broker **8**. The WAV decode check skips itself when `src/two-player/media/bell_b.wav` is absent, because that sound is user-provided and is not distributed under the MIT grant.
+- `test_ping.py` now creates its own `test-results/` directory. That directory is git-ignored, so a fresh clone previously failed in `setUp` before any assertion ran; the same fix was applied to the working-tree copy.
+- `source-inventory.json` was regenerated from the tracked file list (**395 entries**) so it covers the ping sources; the previous file predated them.
+- **No two-PC result exists.** Marker rendering, host/guest colours, the sound cue and input suppression in the real game are unverified. The 60/27/8 figures are simulated checks against test doubles.
+
+本轮把 0.8.42 标点功能完整并入导出，并从导出目录独立构建出与已发布 DLL 逐字节相同的插件；60／27／8 项均为替身检查，双机画面、声音和输入抑制仍无实测结论。
+
 ## 2026-11-14 version 0.8.41 / 传输、查找与视野修订
 
 - The six changed production files were copied from the finalized two-player working source: `MoveProbe.cs`, `LanStateFeed.cs`, `SnapshotTransport.cs`, `GuardPursuit.cs`, `SceneLookup.cs` and `MissionEntrySync.cs`. Export-specific build-directory adaptations, privacy filtering and synthetic live-import fixtures were retained. The multiplayer branch was not changed.

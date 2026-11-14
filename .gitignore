@@ -4,6 +4,8 @@ artifacts/
 **/staging/
 **/test-results/
 **/__pycache__/
+# User-supplied ping sound; not covered by the MIT grant
+src/two-player/media/
 *.py[cod]
 *.dll
 *.exe

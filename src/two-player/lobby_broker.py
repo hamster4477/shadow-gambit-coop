@@ -6,6 +6,7 @@ import threading
 import time
 from session_broker import atomic
 from control_file import read_json
+from ping_broker import exchange as exchange_pings
 
 MAX_BYTES = 32768
 
@@ -206,7 +207,9 @@ def serve_lobby(handler):
                 result = broker.state()
         elif handler.command == 'POST' and not handler.headers.get('Origin') and handler.headers.get('X-Coop-Lobby') == '1':
             payload = json.loads(handler.body(32768))
-            if isinstance(payload, dict) and payload.get('operation') == 'planning':
+            if isinstance(payload, dict) and payload.get('operation') == 'ping':
+                result = exchange_pings(session, payload)
+            elif isinstance(payload, dict) and payload.get('operation') == 'planning':
                 result = planning_status(session.control, payload)
             elif isinstance(payload, dict) and payload.get('operation') == 'training':
                 result = training_status(session.control, payload)

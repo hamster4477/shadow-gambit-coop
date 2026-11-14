@@ -1,7 +1,7 @@
 param([string]$Python='python',[switch]$SkipNetwork)
 $ErrorActionPreference='Stop'
 $repo=Split-Path $PSScriptRoot
-& (Join-Path $PSScriptRoot 'Test-TwoPlayer.ps1')
+& (Join-Path $PSScriptRoot 'Test-TwoPlayer.ps1') -Python $Python
 $source=Join-Path $repo 'src/multiplayer'
 foreach($name in 'test-multi-ownership.ps1','test-multi-spectator.ps1','test-multi-pages.ps1','test-multiplayer-checkpoint-barrier.ps1','test-multiplayer-planning-retire.ps1','test-lobby-host.ps1'){
     & pwsh -NoProfile -File (Join-Path $source "session-next/$name")

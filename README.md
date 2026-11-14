@@ -8,7 +8,7 @@ Unofficial experimental co-op for **Shadow Gambit: The Cursed Crew**, using BepI
 
 | Source | Baseline | Status |
 | --- | --- | --- |
-| `src/two-player` | `0.8.41 / 2026-11-14 performance and view audit` | Latest two-player fixes, gameplay retest pending / 已合并最新双人修订，待双机复验 |
+| `src/two-player` | `0.8.42 / 2026-11-14 visual pings` | Latest two-player fixes, gameplay retest pending / 已合并最新双人修订，待双机复验 |
 | `src/multiplayer` | `0.9.0 / MP1-20261113-unlimited-trial` | Separate multiplayer experiment / 独立多人试行版 |
 
 Keep the same variant and build on every participating PC. These directories are independent alternatives; do not mix their files.
@@ -16,6 +16,10 @@ Keep the same variant and build on every participating PC. These directories are
 The two-player export now includes host-role isolation, F7 host resume (F8 remains the native quickload key), pending guest-request retirement on a new launch, tutorial/scene-rewind recovery and checkpoint-failure cleanup. The multiplayer line is still the separate MP1 baseline, not a superset of these newer fixes.
 
 Version 0.8.41 also reduces temporary allocations in UDP snapshot parsing and unnecessary scene-loader lookups. It fixes observer-view handoff and stale facing updates across loading, cutscenes and possession. These are isolated test results, not a measured in-game frame-rate improvement.
+
+Version 0.8.42 adds cosmetic, scene-scoped pings: one marker per player, no cooldown, about five seconds, host cyan / guest amber. Default bindings are `Alt+Left click`, `Ctrl+E+Left click` and the backquote key; right click is unchanged. Pings never issue movement, attack or view-cone commands, and clear across loads, scene changes and disconnects. The **ping sound file is not distributed** under the MIT grant: without `ShadowGambitCoop/media/bell_b.wav` the markers still work and a single warning is logged.
+
+0.8.42 在双人线新增纯装饰的场景内标点：每人一个、无冷却、约五秒，房主青色、客机橙色；默认 `Alt+左键`、`Ctrl+E+左键`、反引号，右键不受影响。标点不产生移动、攻击或原版视野指令，读档／换场景／断线会清空。**提示音文件不随 MIT 授权分发**：缺少 `ShadowGambitCoop/media/bell_b.wav` 时标记照常显示，仅记录一次告警。
 
 截至 2026-11-14，双人导出已补齐启动身份、重连、教程回档和接档失败修订；0.8.41 进一步减少 UDP 解析分配和无关场景查找，并修订发现视野接替及换场后的旧朝向状态。多人版仍是独立实验分支。尚无本轮实机帧率结论；检查边界见 [VALIDATION.md](VALIDATION.md)。
 

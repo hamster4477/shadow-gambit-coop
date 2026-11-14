@@ -19,7 +19,7 @@ using UnityEngine;
 using UnityEngine.AI;
 
 
-[BepInPlugin("local.shadowgambit.moveprobe", "Coop Move Probe", "0.8.41")]
+[BepInPlugin("local.shadowgambit.moveprobe", "Coop Move Probe", "0.8.42")]
 
 public sealed class MoveProbePlugin : BasePlugin
 
@@ -137,6 +137,7 @@ public sealed class MoveProbePlugin : BasePlugin
         DirectGroundClicks = !LegacyKeys;
 
         NativeInput.Probe = AddComponent<MoveProbe>();
+        CoopPings.Initialize(Config);
 
         try { var hooks=new HarmonyLib.Harmony("local.shadowgambit.interactions");hooks.PatchAll(typeof(InteractionSync.Executed));hooks.PatchAll(typeof(InteractionSync.LadderContinuation)); }
 
@@ -903,6 +904,7 @@ public sealed class MoveProbe : MonoBehaviour
     {
         if(shutdownComplete)return;
         shutdownComplete=true;
+        CoopPings.Shutdown();
         GameSpeedSync.Clear();
         StorySync.Close();
         void Clean(string name,Action action)
@@ -1710,6 +1712,7 @@ public sealed class MoveProbe : MonoBehaviour
 
     {
         if(shutdownComplete)return;
+        if(CoopPings.ConsumesClick){pressFrame=-1;pressDisposal=null;return;}
 
         try
         {
@@ -2424,7 +2427,7 @@ public sealed class MoveProbe : MonoBehaviour
             sessionLiveImport.Cancel();sessionBootstrap.Cancel();sessionBootstrap.ForgetJoinedWorld();sessionHost.Cancel();
             sessionSceneFollow.Close();lobbyGuest.Close();lobbyHost.Close();sessionHost.ObserveHosting(false);
             DisconnectGuest();CloseReceiver();crewA=crewB=null;
-            PlanningSync.Clear();StorySync.Close();GameSpeedSync.Clear();ShipRoutineSync.Clear();ShipCrewSession.Close();
+            CoopPings.Clear();PlanningSync.Clear();StorySync.Close();GameSpeedSync.Clear();ShipRoutineSync.Clear();ShipCrewSession.Close();
         },()=>{sessionSceneFollow.Close();nextRestore=0;}))
         {localShipSelection=true;return true;}
         sessionHost.ObserveHosting(hosting);
@@ -2440,11 +2443,12 @@ public sealed class MoveProbe : MonoBehaviour
         GuestMissionPreparation.RequestPick=hosting?null:lobbyGuest.SelectPrepared;
         bool preparing=guestMissionPreparation.Tick(hosting?null:room,lobbyGuest.Current,mission,
             sessionSceneFollow.HasWorld(room),transition,Report);
-        if(preparing){if(sync!=null)DisconnectGuest(true);return true;} // Native preparation owns its UI; no stale gameplay replay.
+        if(preparing){CoopPings.Clear();if(sync!=null)DisconnectGuest(true);return true;} // Native preparation owns its UI; no stale gameplay replay.
         if(!hosting)ShipCrewSession.Tick(false,false,lobbyGuest.Current,!transition&&sessionSceneFollow.Matches(room,lobbyGuest.Current?.world));
         if(!UIWorldMap.bOpenStatic)ShipRoutineSync.Tick(hosting);
         StorySync.Tick(hosting,hosting?null:room,transition,lobbyGuest.Current,hosting||sessionSceneFollow.Matches(room,lobbyGuest.Current?.world));
         PlanningSync.Tick(hosting,room,hosting?SessionWorld.Current:lobbyGuest.Current?.world,!transition&&(hosting?receiver!=null&&sessionHost.HasRecentPeer:sync!=null&&!sync.Stopped&&sync.Session!=null&&sessionSceneFollow.Matches(room,lobbyGuest.Current?.world)));
+        CoopPings.Tick(hosting,room,hosting?SessionWorld.Current:lobbyGuest.Current?.world,!transition&&(hosting?receiver!=null&&sessionHost.HasRecentPeer:sync!=null&&!sync.Stopped&&sync.Session!=null&&sessionSceneFollow.Matches(room,lobbyGuest.Current?.world)));
         bool queued=sessionSceneFollow.Tick(hosting?null:room,lobbyGuest.Current,mission,sync?.CanSend==true,
             sessionBootstrap.JoinedRoom,sessionBootstrap.JoinedWorld,transition,Report,()=>{
                 if(sessionIndexRefresh.Busy||SaveProcessManager.bLoading||SaveProcessManager.bProcessing||SaveProcessManager.bAsyncWriteOperationRunning)return false;
@@ -2480,7 +2484,7 @@ public sealed class MoveProbe : MonoBehaviour
 
             { resumeHostAfterDisconnect=resumeHostAfterDisconnect||receiver!=null||MoveProbePlugin.LastPair.Value=="H"||cachedHostIntent||HostLaunch;
               cachedHostIntent=false;string hostStart=System.IO.Path.Combine(SessionHost.DirectoryPath,"host-start.txt");if(System.IO.File.Exists(hostStart))System.IO.File.Delete(hostStart);
-              PlanningSync.Clear();TrainingSession.Leave();sessionLiveImport.Cancel();sessionIndexRefresh.CancelPending();lobbyHost.Close();lobbyGuest.Close();sessionHost.Cancel(); sessionBootstrap.Cancel(); Remember(""); DisconnectGuest(); CloseReceiver(); crewA = crewB = null; GameSpeedSync.Clear(); StorySync.Close(); Report("Disconnected; pairing forgotten."); return; }
+              CoopPings.Clear();PlanningSync.Clear();TrainingSession.Leave();sessionLiveImport.Cancel();sessionIndexRefresh.CancelPending();lobbyHost.Close();lobbyGuest.Close();sessionHost.Cancel(); sessionBootstrap.Cancel(); Remember(""); DisconnectGuest(); CloseReceiver(); crewA = crewB = null; GameSpeedSync.Clear(); StorySync.Close(); Report("Disconnected; pairing forgotten."); return; }
 
             if(hostResumeRequested||(Application.isFocused&&Input.GetKeyDown(KeyCode.F7))){hostResumeRequested=false;ResumeHost();return;}
             NativeSkillProbe.Tick();

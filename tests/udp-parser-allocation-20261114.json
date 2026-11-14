@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-14",
+  "scope": "Production UDP receive/parser with simulated socket; no network/game FPS claim",
+  "timing": "Indicative only; allocation reduction is the asserted metric. Alternating order, 200 warmup frames per trial.",
+  "checks": 12,
+  "results": [
+    {
+      "snapshotBytes": 1024,
+      "iterationsPerTrial": 1500,
+      "trials": 3,
+      "beforeAllocatedBytes": 8808.0,
+      "afterAllocatedBytes": 6184.0,
+      "reductionPercent": 29.79,
+      "beforeMedianMicroseconds": 8.050066666666666,
+      "afterMedianMicroseconds": 7.1302666666666665,
+      "beforeTimeSamples": [
+        8.2526,
+        8.050066666666666,
+        7.5576
+      ],
+      "afterTimeSamples": [
+        7.1302666666666665,
+        7.243533333333333,
+        6.825266666666667
+      ]
+    },
+    {
+      "snapshotBytes": 8192,
+      "iterationsPerTrial": 1500,
+      "trials": 3,
+      "beforeAllocatedBytes": 84520.0,
+      "afterAllocatedBytes": 63752.0,
+      "reductionPercent": 24.57,
+      "beforeMedianMicroseconds": 56.130266666666664,
+      "afterMedianMicroseconds": 57.3368,
+      "beforeTimeSamples": [
+        52.481,
+        57.994733333333336,
+        56.130266666666664
+      ],
+      "afterTimeSamples": [
+        58.7262,
+        57.3368,
+        46.437400000000004
+      ]
+    },
+    {
+      "snapshotBytes": 32768,
+      "iterationsPerTrial": 1500,
+      "trials": 3,
+      "beforeAllocatedBytes": 337688.0,
+      "afterAllocatedBytes": 254712.0,
+      "reductionPercent": 24.57,
+      "beforeMedianMicroseconds": 176.25866666666667,
+      "afterMedianMicroseconds": 168.82846666666669,
+      "beforeTimeSamples": [
+        181.8552666666667,
+        176.25866666666667,
+        172.91373333333334
+      ],
+      "afterTimeSamples": [
+        174.26606666666666,
+        168.82846666666669,
+        164.62006666666667
+      ]
+    }
+  ]
+}

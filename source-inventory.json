@@ -1,0 +1,1936 @@
+{
+  "schema": 2,
+  "originalCodeLicense": "MIT",
+  "thirdPartyBinariesIncluded": false,
+  "twoPlayerBase": "0.8.41 / S20-20261114 performance and view audit",
+  "multiplayerBase": "MP1-20261113-unlimited-trial",
+  "hashScope": "Final source export file bytes, relative to repository root; excludes this inventory, generated artifacts, runtime, staging, research and caches.",
+  "files": [
+    {
+      "file": ".gitattributes",
+      "bytes": 130,
+      "sha256": "3E39A381D4D97EB642B17946E9B301D7F7E4D6681F5AAE7678CD02553689BFFD"
+    },
+    {
+      "file": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "bytes": 1154,
+      "sha256": "60C4CEBEB37F51D3A4092658F8314E208F63A93F87B72C8FE83035D6BDA1A7F7"
+    },
+    {
+      "file": ".gitignore",
+      "bytes": 460,
+      "sha256": "46ACAA25E546A3B09358065F55B2D77540823824245D0AC2219EAC17ABEE318A"
+    },
+    {
+      "file": "BUILDING.md",
+      "bytes": 4427,
+      "sha256": "92D2008A5253C12D7984F90C2470DB3872623634241559069338B28584577E87"
+    },
+    {
+      "file": "CONTRIBUTING.md",
+      "bytes": 1124,
+      "sha256": "5DCC94F0ADA973C1166008D3B4AE4E66AED34AB873714BB0FEF27582366781FE"
+    },
+    {
+      "file": "LICENSE",
+      "bytes": 1110,
+      "sha256": "972AE73AD63D6164001E0CAA813D0691563A93BF5F9D1B8D122C2690D2B207A3"
+    },
+    {
+      "file": "README.md",
+      "bytes": 5912,
+      "sha256": "044BCBAABCD7EE667FB40D011736FC0F8A8B5330CE88B49174AA4A64BD03F3FD"
+    },
+    {
+      "file": "RELEASE_REVIEW.md",
+      "bytes": 3642,
+      "sha256": "63D0DC41912F09708C07F08523BA3052C3262F829F08B262EF6C194FCCB8EFF1"
+    },
+    {
+      "file": "scripts/Build.ps1",
+      "bytes": 1276,
+      "sha256": "763B5A1BCCBBA2AB473190E82379157DEEC7DFE0BE92EC0E12D4BDF2FD438356"
+    },
+    {
+      "file": "scripts/Package-Mod.ps1",
+      "bytes": 420,
+      "sha256": "0627B23CF272DB7D2A36034380E49100B1E6B5453431E24BAC5D233D60A9D5D5"
+    },
+    {
+      "file": "scripts/package_mod.py",
+      "bytes": 3759,
+      "sha256": "8D39CC8CD241E183CE873F0BF11D6AA6A43EA8A23D86FECE656D19D988E340C8"
+    },
+    {
+      "file": "scripts/Test-TwoPlayer.ps1",
+      "bytes": 1014,
+      "sha256": "DD5043076ABDA28B93E8A961EFE71423F950EE973426FCD3BB13D74E834EFF56"
+    },
+    {
+      "file": "scripts/Test.ps1",
+      "bytes": 1374,
+      "sha256": "6F068FA90AADF04B07AD9D3B7840B755954EF6BE6EF70EA939EEDB3A51C3DA02"
+    },
+    {
+      "file": "SECURITY.md",
+      "bytes": 1334,
+      "sha256": "8C5FC7FE1D9D3DEEF2406A3725F17548F4AD1BC2B19F33D8E0F300E37E2FF76C"
+    },
+    {
+      "file": "src/multiplayer/ActorOrderReceipt.cs",
+      "bytes": 1067,
+      "sha256": "E3205F7FB858FCC3FF0AD695DCFB3CEE8848F3F3A50472C71945BD47C27DCC8C"
+    },
+    {
+      "file": "src/multiplayer/BaitObjectSync.cs",
+      "bytes": 12290,
+      "sha256": "FCFFA348562BB86EF4617641282CEE2FEB7587CD5B7EA1EAD65A76161C2B4883"
+    },
+    {
+      "file": "src/multiplayer/BlindSync.cs",
+      "bytes": 16345,
+      "sha256": "8679C09BFBEB238F1D8D8EC88F45605D45936C12F71314DBDDAB6A6D706A0CB7"
+    },
+    {
+      "file": "src/multiplayer/BodySync.cs",
+      "bytes": 12848,
+      "sha256": "54881E4BFE1F6C379421E92E37F16FEBAFBB5324A1685DC6ADD21C4FD1561CC2"
+    },
+    {
+      "file": "src/multiplayer/build-probe.ps1",
+      "bytes": 11092,
+      "sha256": "B107A1528A98DBC171B6B53D37D32744E13F1AA9D25B745D0D6528A4074E4A22"
+    },
+    {
+      "file": "src/multiplayer/build-steam-launcher.ps1",
+      "bytes": 805,
+      "sha256": "2B972795CE8A2D941ED3F157661D441544CD69E8C3A5F8D2889AF42C9755A53E"
+    },
+    {
+      "file": "src/multiplayer/CannonFlightProtocol.cs",
+      "bytes": 2520,
+      "sha256": "F6CF13534E2AAD5CDC17390D974AF04FB722AC4AB97D10ADADD72493B0C26B87"
+    },
+    {
+      "file": "src/multiplayer/CannonFlightSync.cs",
+      "bytes": 18227,
+      "sha256": "EC26B0C8BA36CFA7683B72FE955206606DEC25B912ECFFC55650A86036038700"
+    },
+    {
+      "file": "src/multiplayer/CannonLaunchSync.cs",
+      "bytes": 7253,
+      "sha256": "2B2D33897DB85D03D9C8619ADD908B89C275FB03DD00A43C45987A1547DB7EE6"
+    },
+    {
+      "file": "src/multiplayer/CannonStateSync.cs",
+      "bytes": 18194,
+      "sha256": "8F4B357CDF98554B3FB072B13AA63562E66FFBBF37E54D385A598E2C9E273A8A"
+    },
+    {
+      "file": "src/multiplayer/CharmingGhostNative.cs",
+      "bytes": 3903,
+      "sha256": "CF422F2765CA4DC5516A0B29C8561D015FE62BB8A9AE5304A4E70A8569E5B4F6"
+    },
+    {
+      "file": "src/multiplayer/CharmingGhostPlayback.cs",
+      "bytes": 2819,
+      "sha256": "D7319E1705E6D8603E3B99BBDFED354A7E069734F1493E59FDBDCA9090AD9AD6"
+    },
+    {
+      "file": "src/multiplayer/CharmingGhostSync.cs",
+      "bytes": 2764,
+      "sha256": "4AB5235F243C93013EC2F86C5D82E70AED9AF43767A68CDD9D8AE40E026E5D6E"
+    },
+    {
+      "file": "src/multiplayer/Collect-Guest.cmd",
+      "bytes": 125,
+      "sha256": "DAC5897CF48AD3B084B329ACE931A02D8170644C1C91E459820EEE6A9076A4C4"
+    },
+    {
+      "file": "src/multiplayer/Collect-Host.cmd",
+      "bytes": 124,
+      "sha256": "ED61FC8098235660574399B1C7B8C9F8D7EBCAF1615FBEF69D6D5684C530FD77"
+    },
+    {
+      "file": "src/multiplayer/CombatPlayback.cs",
+      "bytes": 16546,
+      "sha256": "8245B43335CFDBD850CD94ED24D87B7E2883CDC6B7226A7F4391A459B514B2B7"
+    },
+    {
+      "file": "src/multiplayer/control_file.py",
+      "bytes": 3809,
+      "sha256": "0CD9E43195A8498C382C8E400682985A30CDD2E0003E8BD2FC2670885382C0D4"
+    },
+    {
+      "file": "src/multiplayer/ControlledCrew.cs",
+      "bytes": 9534,
+      "sha256": "5481BF166139091E40871111728C4AC93E4617539CC4CF77F2A1468D24D9A043"
+    },
+    {
+      "file": "src/multiplayer/ControlNative.cs",
+      "bytes": 4125,
+      "sha256": "3FAC246551B912A66C7C8C22B4D5E67E61BD572FA9EAFE1B8A10DF8427471E0E"
+    },
+    {
+      "file": "src/multiplayer/ControlPlayback.cs",
+      "bytes": 2893,
+      "sha256": "4B101E93F3864020773444E0BC4042E3A6E04579DAB85B1A9DB4088685F178EC"
+    },
+    {
+      "file": "src/multiplayer/ControlStateSync.cs",
+      "bytes": 3632,
+      "sha256": "2DAC12BD0E801B44DDE8D1B507FF5BE4DD42D67BE568EEBDEECBCECAC4DA73EA"
+    },
+    {
+      "file": "src/multiplayer/CoopInvite.cs",
+      "bytes": 4081,
+      "sha256": "9356382EE4D99CD8E4A9E4C2A4D86AAA22797CF743D58908DC196A29EF4EFA8B"
+    },
+    {
+      "file": "src/multiplayer/CoopPerformance.cs",
+      "bytes": 2703,
+      "sha256": "A576020206514EEED96D9B671FA5DCAB3B6284C0E8FAF51EF8546D2035FE0601"
+    },
+    {
+      "file": "src/multiplayer/CoopWaitLock.cs",
+      "bytes": 5644,
+      "sha256": "7982FA75B13B4433576CF17D835F1D440FB2CD915F9F65381A62E0896DEA4077"
+    },
+    {
+      "file": "src/multiplayer/CoverSync.cs",
+      "bytes": 8578,
+      "sha256": "37E706D6726516808F895873C8143DC9D2799EE2E3BB7DBBE8138834FD45303E"
+    },
+    {
+      "file": "src/multiplayer/CrewFollower.cs",
+      "bytes": 4736,
+      "sha256": "99B56FA1CC8E5E4D858F3B8BD53B47F3A3BF55E84232A465E18EF9568EDD5E4A"
+    },
+    {
+      "file": "src/multiplayer/CrewOwnershipReplica.cs",
+      "bytes": 1676,
+      "sha256": "42DC96A071C804216ECB873975381FB6B3C8D94DC8D9DB7A45A16CAF59659E87"
+    },
+    {
+      "file": "src/multiplayer/CrewRosterProtocol.cs",
+      "bytes": 57645,
+      "sha256": "0EAC1D60CBB003CB76E55DA14F161EF2E96F1085692FBD06213AF90BB386710C"
+    },
+    {
+      "file": "src/multiplayer/CrewRosterSync.cs",
+      "bytes": 13273,
+      "sha256": "64892820E9D639DC402A7BDD01314DFD08F244C935B4DF88B093AD7649977B81"
+    },
+    {
+      "file": "src/multiplayer/CrewRoutePlayback.cs",
+      "bytes": 4707,
+      "sha256": "BEAF1D6D8C1E0772D32C9AAE660E3CE8672F32960EC4410FD2F69122547E013E"
+    },
+    {
+      "file": "src/multiplayer/CrewSync.cs",
+      "bytes": 59408,
+      "sha256": "6F1A08475B5D603BD291DFE747B20ABE3824B9999D59963DEA61482787DD1AF4"
+    },
+    {
+      "file": "src/multiplayer/CrewWaitGroup.cs",
+      "bytes": 2405,
+      "sha256": "F934896F767A08F896F1A908A623BF837A03AEF290ACBBAFE5F6D2F6415C3952"
+    },
+    {
+      "file": "src/multiplayer/DigStateSync.cs",
+      "bytes": 10563,
+      "sha256": "FC86D18F337EB54692E36D1F46809CB31D9D9C0AEEE4DB1CE589C763F927AB08"
+    },
+    {
+      "file": "src/multiplayer/EffectProcessClock.cs",
+      "bytes": 2493,
+      "sha256": "BFA924CC5C52862AD9CAC72E9AEB81D18AB65234858D0B1AA28D94592C0F958D"
+    },
+    {
+      "file": "src/multiplayer/EnemyRewind.cs",
+      "bytes": 8568,
+      "sha256": "E317C814DDDD5BF0A3D43169D2D733020B5EB364A2B6F2EECB94401C0E748946"
+    },
+    {
+      "file": "src/multiplayer/FishingItemProtocol.cs",
+      "bytes": 2039,
+      "sha256": "14B7245FC7200B3078EC942972727B84CEDF03D738FBB7F321ECDC78AE1AABC1"
+    },
+    {
+      "file": "src/multiplayer/FishingItemSync.cs",
+      "bytes": 14860,
+      "sha256": "7EFD921ABB9BE0083CE082B79028615FF71159BE21944DBC41D3AD07637F9F1D"
+    },
+    {
+      "file": "src/multiplayer/FishingPullProtocol.cs",
+      "bytes": 5871,
+      "sha256": "4CF5905A0496203B60851AD7A70BD5703A718B64C8AF884CD1F8F3E7BDAD16BD"
+    },
+    {
+      "file": "src/multiplayer/FishingPullSync.cs",
+      "bytes": 20587,
+      "sha256": "0289DE5DE29F986E65BD4D1B4D48C2D3397FA08EE0215301F316D5BB071E50C7"
+    },
+    {
+      "file": "src/multiplayer/FlightCastRecovery.cs",
+      "bytes": 3813,
+      "sha256": "EE3EB9CD0DD802625C2A0C2C3BF0340A305BA9F4A3E3AA18F33DA5AEA856B5EE"
+    },
+    {
+      "file": "src/multiplayer/FlightPageBudget.cs",
+      "bytes": 7027,
+      "sha256": "4DAEA10C47C4BD5F9CBC3F2F4087C8545323C5603E4D9C4D05CA5D2848EE3599"
+    },
+    {
+      "file": "src/multiplayer/FootprintProtocol.cs",
+      "bytes": 2374,
+      "sha256": "048D14435BC4ED8DE451A9BC3F5625AED78CCA34F4A3CE7E761065986E615F24"
+    },
+    {
+      "file": "src/multiplayer/FootprintSync.cs",
+      "bytes": 9259,
+      "sha256": "44DEA5B4F96639D2B6897EDA009E6DCFB04D444881EB48418AD726468AE81FE2"
+    },
+    {
+      "file": "src/multiplayer/FrozenDuelSync.cs",
+      "bytes": 11116,
+      "sha256": "D95C4B6731398DE4CAC3977EE7579BB327C1D27B4C94AC55111DB209C90D71C8"
+    },
+    {
+      "file": "src/multiplayer/FrozenProcessClock.cs",
+      "bytes": 5738,
+      "sha256": "BEEA543365917989AB6F060196234BDA2142DACA9D3AE9DF732A86251B4869FA"
+    },
+    {
+      "file": "src/multiplayer/FrozenSync.cs",
+      "bytes": 15051,
+      "sha256": "747DFBAD8C18C5F69BFEAD8A723D356EB54EA25D5596E8AA1A0FF7B0A295BB9A"
+    },
+    {
+      "file": "src/multiplayer/GameSpeedSync.cs",
+      "bytes": 4227,
+      "sha256": "2103D6A355EC37D275BB3B71DBED08317B9B73FB1FC84425D9A36666BACD518E"
+    },
+    {
+      "file": "src/multiplayer/gateway_lifetime.py",
+      "bytes": 1675,
+      "sha256": "2BED3D3877491A4AACE85EB18405F92E2D4352F2EE01FB50B1F27A785F4933C0"
+    },
+    {
+      "file": "src/multiplayer/gateway_pairing.py",
+      "bytes": 1961,
+      "sha256": "8FECFB4102975C97865A7A368A7D1EBD7C7E1BDD0F7C4946FF0857558DCDFA81"
+    },
+    {
+      "file": "src/multiplayer/GhostObjectSync.cs",
+      "bytes": 15306,
+      "sha256": "25C6FC1755C99671E51BBDA455B28B9F83E91FA94EA15EBA71DF28EC99737C8B"
+    },
+    {
+      "file": "src/multiplayer/GroundClickPolicy.cs",
+      "bytes": 526,
+      "sha256": "3B559AD2853B5B5685529A22EB0930470EE27410CB5FCBBD87F184D1910E864A"
+    },
+    {
+      "file": "src/multiplayer/GuardAuthority.cs",
+      "bytes": 6289,
+      "sha256": "6B6CBC8895E5A775A59D9E289570CBD214F9ADF74674A1A12E6DB569B725A633"
+    },
+    {
+      "file": "src/multiplayer/GuardDiagnostics.cs",
+      "bytes": 7413,
+      "sha256": "58753F232A3A878CF9EAA184581F5B23BEE4924C6E150DA13B2C4C2F143B0824"
+    },
+    {
+      "file": "src/multiplayer/GuardIcons.cs",
+      "bytes": 3648,
+      "sha256": "8CA85BD006A07B4D2298C5539B5C879494E1BA6132A97A890881109A6EC97B4A"
+    },
+    {
+      "file": "src/multiplayer/GuardOutcomes.cs",
+      "bytes": 9407,
+      "sha256": "B7F8A6A3F4DD46787C8DD0CAD7C50154C5C7B2537E034F5AA24BC55F847A03B8"
+    },
+    {
+      "file": "src/multiplayer/GuardPursuit.cs",
+      "bytes": 51502,
+      "sha256": "BF5AC18788276B65D00244225C46A469E0E6A67C1949DD7CC776D3EDA3E7D259"
+    },
+    {
+      "file": "src/multiplayer/GuestActorIntent.cs",
+      "bytes": 2463,
+      "sha256": "996E77FE57B982C3615B278912E19C4B20D1042B9330EE0F2F43DD54895F80A6"
+    },
+    {
+      "file": "src/multiplayer/GuestActorRequests.cs",
+      "bytes": 1606,
+      "sha256": "4779F847BDAFD1B2FD8077F8087DDA59BA377A2D05A4EBE4A6864A97B58ECC23"
+    },
+    {
+      "file": "src/multiplayer/GuestCommandQueue.cs",
+      "bytes": 4366,
+      "sha256": "45BD11450434AD2B4CA5D2B9E6D4C539132873D53BA08E7B8E215DC21D22A38D"
+    },
+    {
+      "file": "src/multiplayer/GuestCrewSelection.cs",
+      "bytes": 9239,
+      "sha256": "E356BFC9FF01DCE7625E0F22A00CC97017488F578C92E4CFCEB5606433CB3AFF"
+    },
+    {
+      "file": "src/multiplayer/GuestDisposal.cs",
+      "bytes": 6855,
+      "sha256": "9437D1AA6A358A33F75F83C9772439DA2C924D0C362E0043D7576981388A06E7"
+    },
+    {
+      "file": "src/multiplayer/GuestExitCollection.cs",
+      "bytes": 1662,
+      "sha256": "4F4EF7F1004EB875628F05D66FEF7D72C875EBA2F300B4488524D41F3D9B03B6"
+    },
+    {
+      "file": "src/multiplayer/GuestGestureState.cs",
+      "bytes": 1828,
+      "sha256": "F81208C0B5E22EBC5AE80761ECB49EEE9153984EFB124FAADD584CC0DDC3C3A7"
+    },
+    {
+      "file": "src/multiplayer/GuestGroundTarget.cs",
+      "bytes": 18193,
+      "sha256": "D71D233D1456EEF3DDAAF76D429D6999E16B69B36499518543F6ADF43014342B"
+    },
+    {
+      "file": "src/multiplayer/GuestLadderSnapshot.cs",
+      "bytes": 3619,
+      "sha256": "D7BB566FB3FD4905C4C1B660916F8203DF6349B335A3ED09849CDD839AB9BC50"
+    },
+    {
+      "file": "src/multiplayer/GuestMissionPreparation.cs",
+      "bytes": 14732,
+      "sha256": "456D3A8771179E0F226B33DCE922FEFACE3EA1F2CB8B87F52884D81509803514"
+    },
+    {
+      "file": "src/multiplayer/GuestMouseSnapshot.cs",
+      "bytes": 2578,
+      "sha256": "D681E0B8B2B42C9225578CDC2275B4A2D1A8E3174030FB42D410F79C786423CD"
+    },
+    {
+      "file": "src/multiplayer/GuestMove.cs",
+      "bytes": 10049,
+      "sha256": "CA5E867410597F79C116175A808DA8E90FAD5E2DC18C10855B6EC11891E6BFA2"
+    },
+    {
+      "file": "src/multiplayer/GuestOrderVersions.cs",
+      "bytes": 1153,
+      "sha256": "052ED746319D4865E0BF068867DCB5F5D14C8643BFDA845B3CC5B665269C4D2C"
+    },
+    {
+      "file": "src/multiplayer/GuestPreview.cs",
+      "bytes": 11927,
+      "sha256": "FAB72A65C23A45787E80ADADE7DE1A81EBC2D51CF7317E5A1C057CBAE05087CC"
+    },
+    {
+      "file": "src/multiplayer/GuestSkillPreview.cs",
+      "bytes": 6799,
+      "sha256": "61550FF8D18A732002A98F2CF80CA6E3F0C1A199C99A31CBBF03202BDACF0968"
+    },
+    {
+      "file": "src/multiplayer/GuestWorldMap.cs",
+      "bytes": 6064,
+      "sha256": "E01B4A674DCE3ED59B2F1084E759B2B7C920F8A6D3EEFE32C9654503BB7CCFD3"
+    },
+    {
+      "file": "src/multiplayer/HostCrewOrders.cs",
+      "bytes": 36808,
+      "sha256": "8A6E894F34A63FFE71813A6BAB20D41CE778A13CAF091CF615528299267569D4"
+    },
+    {
+      "file": "src/multiplayer/HostCrewSelection.cs",
+      "bytes": 16174,
+      "sha256": "B3E9EA57C999B90F9356665E7EE0F825368146D02F58DCBD5273262B513F0ED7"
+    },
+    {
+      "file": "src/multiplayer/HostLoadingView.cs",
+      "bytes": 1007,
+      "sha256": "74B268DAF1239241D16CD9A7B5C883B7B610B7B1AB4A55C6228E10CE441E4F6E"
+    },
+    {
+      "file": "src/multiplayer/InteractionProtocol.cs",
+      "bytes": 5221,
+      "sha256": "3AA6F75FDB8DD55369E8BB892278D6D1B9F68AC2030E1968F199A2B8FFC1AFF4"
+    },
+    {
+      "file": "src/multiplayer/InteractionSync.cs",
+      "bytes": 40294,
+      "sha256": "C1A77F888895D458EC574CE2C2632FF7A9CC16E2B7053A9E2648502E7ADA7475"
+    },
+    {
+      "file": "src/multiplayer/lan-discovery.py",
+      "bytes": 1922,
+      "sha256": "1D749198C45E9D31BB229A4697E392C4765B54EA6970D9D1CF3B7997B1DF7891"
+    },
+    {
+      "file": "src/multiplayer/lan_remote.py",
+      "bytes": 35064,
+      "sha256": "4A69DDFABCA7B6D30064393D7F3B938025423BC9560495F1E4AF12EBA4F56EE2"
+    },
+    {
+      "file": "src/multiplayer/LanStateFeed.cs",
+      "bytes": 5796,
+      "sha256": "D9B4FB55C920DB020BE45769E536FAC186B1EE2BF66AC0F79A4A8D284C794B1C"
+    },
+    {
+      "file": "src/multiplayer/LaunchMode.cs",
+      "bytes": 1964,
+      "sha256": "9E090076D84E7BE30CFE45A4B07CEAEF7A44661696BE0A47130659EDF5D0D23E"
+    },
+    {
+      "file": "src/multiplayer/lobby_broker.py",
+      "bytes": 21446,
+      "sha256": "EE7D51DD16144676342DCE31BF2FE398DBFD6CAE20F6C462A376CB4E5E6D7DD3"
+    },
+    {
+      "file": "src/multiplayer/LobbyDeployment.cs",
+      "bytes": 2886,
+      "sha256": "B63363FB61DD5A65D128292E94C35A939B18359A56A86EA7790E62EC9D68E592"
+    },
+    {
+      "file": "src/multiplayer/LobbyGuest.cs",
+      "bytes": 4050,
+      "sha256": "73FA83AB1627604436F782ADB262E1416B35019DD1DF3685D1A89C642CC95617"
+    },
+    {
+      "file": "src/multiplayer/LobbyHost.cs",
+      "bytes": 14401,
+      "sha256": "3F02CB19BB282D49B434689FA40DD16D64211BF93C7FB55DF035EB6428C22D03"
+    },
+    {
+      "file": "src/multiplayer/LobbyProtocol.cs",
+      "bytes": 5751,
+      "sha256": "79EE337F8C3992AA4A5985F1F6ED90B6FA27E3B442B3E769B5AA29288424F30B"
+    },
+    {
+      "file": "src/multiplayer/LobbySelectionHooks.cs",
+      "bytes": 3407,
+      "sha256": "F517473229A63FB6E98771FCB5D69118D4E7C4E3B8E46E1B9A93B5A398D24449"
+    },
+    {
+      "file": "src/multiplayer/LoopbackMove.cs",
+      "bytes": 3941,
+      "sha256": "CFE29423A27D5A4C465FA49494EE27E6B868422B6E10E85E9690563746C613DF"
+    },
+    {
+      "file": "src/multiplayer/LoopbackProtocol.cs",
+      "bytes": 4604,
+      "sha256": "CD47C9D5894BBA2AEF8DC4C49E6CCA038CACD11F25342CBA673C1FB8F97BF594"
+    },
+    {
+      "file": "src/multiplayer/Melee.cs",
+      "bytes": 3429,
+      "sha256": "286998FF5A41B8175B5766B8CA85235CE51FA698E9E6A49EA46C5A5D5CDDAEB0"
+    },
+    {
+      "file": "src/multiplayer/MimicChoice.cs",
+      "bytes": 4099,
+      "sha256": "BD053361988A2A30BE66680D17DE83F505589E71B99B576BD2316B144B68CF9D"
+    },
+    {
+      "file": "src/multiplayer/MimicNative.cs",
+      "bytes": 4489,
+      "sha256": "AC698DC237F70615CCBE22DB76F56857B302EB2B17FFCEC4CA33F7004A895639"
+    },
+    {
+      "file": "src/multiplayer/MimicStateSync.cs",
+      "bytes": 4543,
+      "sha256": "C58317A39FC48358C2E7E3789777336E15DC22A01B93187DFAF84AE59A878618"
+    },
+    {
+      "file": "src/multiplayer/MissionEntrySync.cs",
+      "bytes": 9384,
+      "sha256": "EA7B665690A40CF63C9A64E337A01DCBE9ED0D6280B2D82E0CD42609F0FF3E4D"
+    },
+    {
+      "file": "src/multiplayer/MissionEntryTrace.cs",
+      "bytes": 7904,
+      "sha256": "CBBB7B510528DB4889773D188EC261376BCAC3E815D1F78CAB999FD8FF3F7459"
+    },
+    {
+      "file": "src/multiplayer/MovementLineLoadRepair.cs",
+      "bytes": 1947,
+      "sha256": "F2A31890EEDB4D33CCE7D4F618F3FDC0F278BE0286353FFDD9F77EB346D1D179"
+    },
+    {
+      "file": "src/multiplayer/MoveProbe.cs",
+      "bytes": 113364,
+      "sha256": "68340A390C19DDF00D493C65CC945DA74BF71B953BB12D0720E12E783B28927E"
+    },
+    {
+      "file": "src/multiplayer/MultiPeerContext.cs",
+      "bytes": 2158,
+      "sha256": "E6E13E2BFB6ED5E1262319AD3E5627FF8F1A79A728AA8B11966B8E0539FC6D4A"
+    },
+    {
+      "file": "src/multiplayer/native-ui-reference.json",
+      "bytes": 2927,
+      "sha256": "AE2BB836DA2959FDA4C54B3A297786014C8B47D9F14B5180D23747577B9BAFAF"
+    },
+    {
+      "file": "src/multiplayer/native_tcp.py",
+      "bytes": 5390,
+      "sha256": "5BC20D237DA068EFB6CB688E544B02665C95C0CBA6CE6880EEA3462CBE6B05F2"
+    },
+    {
+      "file": "src/multiplayer/NativeDetectionProfile.cs",
+      "bytes": 2444,
+      "sha256": "4C98BF942F4258CCC9CA9F6E8FAA0A1070348E332C2C4BA1764CF3251D10A6A6"
+    },
+    {
+      "file": "src/multiplayer/NativeGait.cs",
+      "bytes": 10579,
+      "sha256": "5907EA1032C33821E31CF032558D3AD37BCC98297C0B846ADDC5982DD1027A07"
+    },
+    {
+      "file": "src/multiplayer/NativeInput.cs",
+      "bytes": 18699,
+      "sha256": "6C4B4B9A3C09C1E1F0749C4271E8369B5CB57B1A48E323984FBBADA2D56256CA"
+    },
+    {
+      "file": "src/multiplayer/NativeSkillHooks.cs",
+      "bytes": 4621,
+      "sha256": "FDEB91FFF9FDFD558A4978262290A5621B5051867A1770A14753233658A3886A"
+    },
+    {
+      "file": "src/multiplayer/NativeSkillProbe.cs",
+      "bytes": 9113,
+      "sha256": "ED1F351096F3FAAF45F73BB6CB0076E31AC84B8EBB6006365BDD30A0257186C5"
+    },
+    {
+      "file": "src/multiplayer/NativeUiEvidence.cs",
+      "bytes": 6846,
+      "sha256": "F3F629496561EE15C93E12EBE7E1457681A656F05041E4F8B15F146F1E6885FE"
+    },
+    {
+      "file": "src/multiplayer/PeerPace.cs",
+      "bytes": 4182,
+      "sha256": "067B378EB0D8B37363B6A205C6CE22887F9B300083F396AA0CD0AA118CEC5AB2"
+    },
+    {
+      "file": "src/multiplayer/PlanningNative.cs",
+      "bytes": 9237,
+      "sha256": "7309A50AA1A6677DA8E1F9987072E164F6D0B7D469A908222507B30A62328A0B"
+    },
+    {
+      "file": "src/multiplayer/PlanningSync.cs",
+      "bytes": 11943,
+      "sha256": "8E5810F95F521998744205C0E3BFD0893CA08E5B78F44E6F45AC281E86880659"
+    },
+    {
+      "file": "src/multiplayer/PlanningWire.cs",
+      "bytes": 3803,
+      "sha256": "9FC36D87D5A79235AC9DDE3167D2B5E8180602A9B3888BD033392284AB5BC024"
+    },
+    {
+      "file": "src/multiplayer/ReinforcementSync.cs",
+      "bytes": 3902,
+      "sha256": "B007E0097F560AF1AB954B9C04E5353A80AB8B45CC4BC1EAC74CC680943F3C36"
+    },
+    {
+      "file": "src/multiplayer/room-address.ps1",
+      "bytes": 6926,
+      "sha256": "B3D038C326F0952B5E090FD140E9D482716DD64DA54060423E4B2C8734821793"
+    },
+    {
+      "file": "src/multiplayer/runtime-files.json",
+      "bytes": 940,
+      "sha256": "D8A94548397A2838A9ACCC55DBD457837BE04FAF256D5D9A954B0A543528BFC5"
+    },
+    {
+      "file": "src/multiplayer/save_transfer.py",
+      "bytes": 6040,
+      "sha256": "0DAF9DD92ACAB6F352DE64030C6A3C77D47B42E54D33185ABAA75E3866242C77"
+    },
+    {
+      "file": "src/multiplayer/SceneEpoch.cs",
+      "bytes": 1209,
+      "sha256": "398EE4E55BCE58EBF0C0684DFB92248A04EF1FDA459C92751DB130DD6B709D37"
+    },
+    {
+      "file": "src/multiplayer/SceneLookup.cs",
+      "bytes": 1367,
+      "sha256": "754813C5C2CD2173636D1B0D08CCA239E6EAA6CC9972D5312A80A2B1CEBB6E25"
+    },
+    {
+      "file": "src/multiplayer/SceneLookupSlot.cs",
+      "bytes": 793,
+      "sha256": "1C1ED1D657E69C4122014422D1D9F13EE72E7DD87248A1CE2DD15EF1E5042275"
+    },
+    {
+      "file": "src/multiplayer/send_move.py",
+      "bytes": 1687,
+      "sha256": "FA9E84806DB2D5BB8F1B8D7E802988ED487EF47517098D32C0459CEE836913E5"
+    },
+    {
+      "file": "src/multiplayer/session-next/CrewOwnership.cs",
+      "bytes": 7746,
+      "sha256": "4D5B27136B33491D3DA589FB37CE4A1EC51ECB1CAED1FD6AFDE9388D3959E1DA"
+    },
+    {
+      "file": "src/multiplayer/session-next/FrameworkJsonCompat.cs",
+      "bytes": 2165,
+      "sha256": "FC1C665617AF4BF41BD41C06904354D4DB13671D7A81B8A366BFB327F4867613"
+    },
+    {
+      "file": "src/multiplayer/session-next/GuestPrepareProgress.cs",
+      "bytes": 3754,
+      "sha256": "4794879D3FA0EE61FDDE071FFA8B616A384325DBE911B6690B0E7C2FD4C91207"
+    },
+    {
+      "file": "src/multiplayer/session-next/GuestSavePrepare.cs",
+      "bytes": 33744,
+      "sha256": "8074B27D7BC38E6C5EE3B8C2BC2E0E6188B67CF46ED2C88D35A69BCB225B57DA"
+    },
+    {
+      "file": "src/multiplayer/session-next/load-preparer.ps1",
+      "bytes": 368,
+      "sha256": "305842E7DBFC4492BB7716288C6371BE10B3504DAD1077D9F62870C3155A662B"
+    },
+    {
+      "file": "src/multiplayer/session-next/LobbyHostTests.cs",
+      "bytes": 18176,
+      "sha256": "18015E8AFDC8926B371753385F9084EEF378EBC28A53EB147CC985C547F32A59"
+    },
+    {
+      "file": "src/multiplayer/session-next/MultiOwnershipTests.cs",
+      "bytes": 9830,
+      "sha256": "66C291AF0F4FFBC36E0A7CFFFED1C98E2FBD035F371CCD9B3DB51B66915C42A0"
+    },
+    {
+      "file": "src/multiplayer/session-next/NativeTcpBridge.cs",
+      "bytes": 8401,
+      "sha256": "3C5EE28889821051B72B7C68B587F043C3801776CE0E2B793B931E3792BC44A6"
+    },
+    {
+      "file": "src/multiplayer/session-next/prepare-guest.ps1",
+      "bytes": 1746,
+      "sha256": "0925C4BF8F9C8CAABDC3BD68DC61CFB074647D16326BE16C0772C6C8FBEBDF7C"
+    },
+    {
+      "file": "src/multiplayer/session-next/save_bundle.py",
+      "bytes": 4755,
+      "sha256": "6B9C10C519CA63D328DE431E571BC9554267F3EDB3F29EB02970771A7AA1E5B1"
+    },
+    {
+      "file": "src/multiplayer/session-next/test-lobby-host.ps1",
+      "bytes": 1147,
+      "sha256": "302235D98A310482D99C2264B1425CB79986AE5BFFC2BFE2579AAAC3E354D450"
+    },
+    {
+      "file": "src/multiplayer/session-next/test-multi-ownership.ps1",
+      "bytes": 665,
+      "sha256": "8CDB45B23592BE76EEC2264967F5CDFF0F37F6BD27A6FD6D72C50D9DCAC4680C"
+    },
+    {
+      "file": "src/multiplayer/session-next/test-multi-pages.ps1",
+      "bytes": 6055,
+      "sha256": "3080729A628AF1F560B67DCC589EA45648182E257834F5CA46ADCC9338A2B5A5"
+    },
+    {
+      "file": "src/multiplayer/session-next/test-multi-spectator.ps1",
+      "bytes": 7348,
+      "sha256": "B635B1D4622A924B842A37419C7789EDDDE6E3BD2AB45AA90DA2ED2D13EAE56E"
+    },
+    {
+      "file": "src/multiplayer/session-next/test-multi-transport.ps1",
+      "bytes": 5796,
+      "sha256": "49780E008CC02FF151EDF1C1EDC121CB5A7992A32992F27BBCA99A694DE7A5EC"
+    },
+    {
+      "file": "src/multiplayer/session-next/test-multiplayer-checkpoint-barrier.ps1",
+      "bytes": 4222,
+      "sha256": "A6E7C39EF537E83A4EA9223AB8B508EA1782B205BF86594B0C9B638EDD7913CE"
+    },
+    {
+      "file": "src/multiplayer/session-next/test-multiplayer-planning-retire.ps1",
+      "bytes": 2969,
+      "sha256": "085E74052286A60DA0B59D73A20752F8F3A1873F70AFD275FC630715478E05B2"
+    },
+    {
+      "file": "src/multiplayer/session-next/test_multiplayer_session_broker.py",
+      "bytes": 16020,
+      "sha256": "92398CE59C3DA4CF065F7BFE09496BEC34207E0FDCB6455A7466E1D47A3BF880"
+    },
+    {
+      "file": "src/multiplayer/session-next/test_multiplayer_transport.py",
+      "bytes": 13281,
+      "sha256": "791EE83F8B56BE45CDA6B9763F8F0787337C447B9F63B76963F96C49111BC5A0"
+    },
+    {
+      "file": "src/multiplayer/session-next/test_session_broker.py",
+      "bytes": 17893,
+      "sha256": "7CBC41D7ED9CA1D057DFE549B769DF490AB22FED79012B4E84642C32BFD25074"
+    },
+    {
+      "file": "src/multiplayer/session_broker.py",
+      "bytes": 23790,
+      "sha256": "7D34DAD1874E6ED185485ED41B8BCC958D8F82AB111D019A628FD0FE50B431C6"
+    },
+    {
+      "file": "src/multiplayer/SessionBootstrap.cs",
+      "bytes": 25492,
+      "sha256": "0D10324CDEF97C7A3DFFDB88177AA7B480CB1850A1C364E020D8303470395373"
+    },
+    {
+      "file": "src/multiplayer/SessionGuestBarrier.cs",
+      "bytes": 6651,
+      "sha256": "9AA91B79165E1BE6C2D956C211021935DEF8A2C2CE0477FDD8B5C4AC6C698E6C"
+    },
+    {
+      "file": "src/multiplayer/SessionHost.cs",
+      "bytes": 27496,
+      "sha256": "75C6EDA765CF441F8DBE818E283A659FD0EBA0E4BF7AF4E0DC84051E4E787E3A"
+    },
+    {
+      "file": "src/multiplayer/SessionIndexRefresh.cs",
+      "bytes": 8203,
+      "sha256": "CC8D21E7939E9914531E5B89A72332A3B437BBD1D70209912D740FEA18689305"
+    },
+    {
+      "file": "src/multiplayer/SessionLiveImport.cs",
+      "bytes": 18348,
+      "sha256": "0919222AAC56ED2528A0839BDF19D7D6F8C833EF39984F59451542CC49DD9565"
+    },
+    {
+      "file": "src/multiplayer/SessionQuickReload.cs",
+      "bytes": 3621,
+      "sha256": "CAAA98FCB23C88532FED56567B8C250B7556B17A4236E5FAC3CB9084F196610C"
+    },
+    {
+      "file": "src/multiplayer/SessionSceneFollow.cs",
+      "bytes": 8298,
+      "sha256": "06DA4270EBE16B3B5D756322838B03A14EBDAB62E0692F00B57BB24755A822E4"
+    },
+    {
+      "file": "src/multiplayer/SessionTaskContinue.cs",
+      "bytes": 1727,
+      "sha256": "FDC792F9C2E8F5EA572DE1CA7312C21C25CBD0C1F58D8DC285F36603D5776F3A"
+    },
+    {
+      "file": "src/multiplayer/SessionWorld.cs",
+      "bytes": 5501,
+      "sha256": "406EC72AC384B79926822893F90FBC4E372C228E97D5B440E026F41282AE2CDF"
+    },
+    {
+      "file": "src/multiplayer/Setup-Steam.cmd",
+      "bytes": 70,
+      "sha256": "72AAC1DEC966B552AF74951D69E5354FC46D8096C3AB7A3C3C6FB8A6C39C8AC8"
+    },
+    {
+      "file": "src/multiplayer/ShipCrewLease.cs",
+      "bytes": 2840,
+      "sha256": "D4B14C510DDEB531776FDF43B296CA24196BEFE98C9467C1083ED41FB46889F0"
+    },
+    {
+      "file": "src/multiplayer/ShipCrewSession.cs",
+      "bytes": 7970,
+      "sha256": "1CE6B905EEAC3FF780BC892AD782EAFCD21B867C5D2DA929DA3F079C62DE4FD4"
+    },
+    {
+      "file": "src/multiplayer/ShipRoutineProtocol.cs",
+      "bytes": 1347,
+      "sha256": "1F14A400D8D410AE2F2F5B04F8EAD9921973B6EE03C10394BB3B401CD0851C12"
+    },
+    {
+      "file": "src/multiplayer/ShipRoutineSync.cs",
+      "bytes": 5358,
+      "sha256": "3849A90037DBC7498FAEACA88C2B1A4B9340C7151BDF5BB72BFAF1E834381F78"
+    },
+    {
+      "file": "src/multiplayer/skill-protocol.json",
+      "bytes": 17966,
+      "sha256": "45E678C3978F1703EAF6F46E6661247B0C3479E703B158763984B81725827973"
+    },
+    {
+      "file": "src/multiplayer/SkillLifecycleTrace.cs",
+      "bytes": 14604,
+      "sha256": "7C401124459E939222F071318DA8A59447D86440C5D2247F6B4DEA78E0CFE44D"
+    },
+    {
+      "file": "src/multiplayer/SkillObjectRegistry.cs",
+      "bytes": 2933,
+      "sha256": "EDA1666E608A73C5647D0F55BC5AE314BF4B506BADB50B8433E86601AB73CED9"
+    },
+    {
+      "file": "src/multiplayer/SkillObjectSync.cs",
+      "bytes": 7396,
+      "sha256": "55A999874795564B27190CAAE8696F2D9AEADE82D8F72033B60A890BB3CA9E37"
+    },
+    {
+      "file": "src/multiplayer/SkillResourceSync.cs",
+      "bytes": 10153,
+      "sha256": "E0D72BD4498A729FFD2F1D5F7D0604600B7BE38320A8B24E1C1D38DD0C046F1D"
+    },
+    {
+      "file": "src/multiplayer/SnapshotTransport.cs",
+      "bytes": 4192,
+      "sha256": "AE85BB02C33E80500A0EA4D3CCB46D47147E16392A21386E8D0C541FEDEDA0EB"
+    },
+    {
+      "file": "src/multiplayer/start-room.ps1",
+      "bytes": 23831,
+      "sha256": "750FBD3CC6AB407E66B208101F62FCB468D6F29FA66AE16CE240F28579231135"
+    },
+    {
+      "file": "src/multiplayer/Steam-Coop.vbs",
+      "bytes": 2443,
+      "sha256": "247FB3236095F418DF4BD0D07D17AB19027DEA1CF75F47934CCF6AC5F3FA849E"
+    },
+    {
+      "file": "src/multiplayer/Steam-Guest.vbs",
+      "bytes": 2423,
+      "sha256": "0B7AC067420AEC339392FC36FAE8E58CC2D6E57A29B03D0C2791681B019AB895"
+    },
+    {
+      "file": "src/multiplayer/steam-join.ps1",
+      "bytes": 7724,
+      "sha256": "BC699A206900509AE4B130A5B64311470AC24615D4465648306B4E69056492FE"
+    },
+    {
+      "file": "src/multiplayer/steam-launch-common.ps1",
+      "bytes": 12442,
+      "sha256": "F3C1DFC9E7095A6BAC5B53B6D04BA800FE8690C13845779ABA8D3BF43BE89305"
+    },
+    {
+      "file": "src/multiplayer/steam-role.ps1",
+      "bytes": 4965,
+      "sha256": "3FCB3A4F8CAA26FBFD090EFD9193F1E876ACD5A931B8ED658DF3E66FCBE813F5"
+    },
+    {
+      "file": "src/multiplayer/steam-start.ps1",
+      "bytes": 12914,
+      "sha256": "EBFEC93E4CC351985F54051B121793E4503016B8A2BE6D8699BD97CF5C711888"
+    },
+    {
+      "file": "src/multiplayer/SteamLauncherHost.cs",
+      "bytes": 2712,
+      "sha256": "02495465F0C985254E003C04B2C56D6FB173675F1152D218792D971A0FB991E0"
+    },
+    {
+      "file": "src/multiplayer/StoryObservation.cs",
+      "bytes": 11084,
+      "sha256": "2C52B2649CCBA2D85F66EB2F48912FFEBE47B59596AF68AD4BA5727974ED194A"
+    },
+    {
+      "file": "src/multiplayer/StoryReplayLedger.cs",
+      "bytes": 821,
+      "sha256": "9DF4707BA74FCE30CB0B5CA9A37A87A026D85F633E0F6F397600D1F20680CE0D"
+    },
+    {
+      "file": "src/multiplayer/StorySync.cs",
+      "bytes": 28187,
+      "sha256": "6AB9B0181250E9F8407AE0DF17739A063907F39C2926C95B8F6C8B94F9257DBA"
+    },
+    {
+      "file": "src/multiplayer/SyncProtocol.cs",
+      "bytes": 19575,
+      "sha256": "55CBB6FB795873B2F9FC118A2875C0E02409D51E3CD2A02AE9CEFE58ECED09DE"
+    },
+    {
+      "file": "src/multiplayer/test-support.ps1",
+      "bytes": 19238,
+      "sha256": "F3878B8975ECBEB99BA7655461772A5D7B8A2A7D5514B698C2A150200A302C66"
+    },
+    {
+      "file": "src/multiplayer/test_lobby_multiplayer.py",
+      "bytes": 6907,
+      "sha256": "E1132FCD273B1DD89A43BED7AD187183B8E0584FDDF98C943CA4B19E01484CF8"
+    },
+    {
+      "file": "src/multiplayer/TimeFreezeSync.cs",
+      "bytes": 14320,
+      "sha256": "5C7FF23C941C7854A489B9AE716566EBDEE83864516E82A1B6A8233414F5EE20"
+    },
+    {
+      "file": "src/multiplayer/TrainingSession.cs",
+      "bytes": 7060,
+      "sha256": "8030E9386F69EBEA648E3475C4AD6F484B915C0C6ECB6D9DEDC665ABA9999CE4"
+    },
+    {
+      "file": "src/multiplayer/TrapObjectSync.cs",
+      "bytes": 15286,
+      "sha256": "14DCD9033815672C5AF829D19280DD639A95E6CA05FC916B2C1738F0595A990A"
+    },
+    {
+      "file": "src/multiplayer/verify-skill-hooks.ps1",
+      "bytes": 6026,
+      "sha256": "6535353EFF1800FA807E9078B3CA669F1501D974FAB3E8E457AC3FB747F0B293"
+    },
+    {
+      "file": "src/multiplayer/客机一键加入.cmd",
+      "bytes": 100,
+      "sha256": "8DBF071AAEB9DDDCA57219B481715032D6B9E9C25D879520892DF72E1FCBA0F3"
+    },
+    {
+      "file": "src/multiplayer/房主一键开房.cmd",
+      "bytes": 93,
+      "sha256": "FCA9E51380DF107C7AE629C14F9364E697C0C8EBC2B88405770AD62588C47DCC"
+    },
+    {
+      "file": "src/multiplayer/收集房主测试结果.cmd",
+      "bytes": 120,
+      "sha256": "58D8F6D8D01B6DEBEAD95F5480F8F6B97666FDE17D1CE1F52401778C345A83B4"
+    },
+    {
+      "file": "src/two-player/ActorOrderReceipt.cs",
+      "bytes": 1067,
+      "sha256": "E3205F7FB858FCC3FF0AD695DCFB3CEE8848F3F3A50472C71945BD47C27DCC8C"
+    },
+    {
+      "file": "src/two-player/BaitObjectSync.cs",
+      "bytes": 12290,
+      "sha256": "FCFFA348562BB86EF4617641282CEE2FEB7587CD5B7EA1EAD65A76161C2B4883"
+    },
+    {
+      "file": "src/two-player/BlindSync.cs",
+      "bytes": 16345,
+      "sha256": "8679C09BFBEB238F1D8D8EC88F45605D45936C12F71314DBDDAB6A6D706A0CB7"
+    },
+    {
+      "file": "src/two-player/BodySync.cs",
+      "bytes": 12848,
+      "sha256": "54881E4BFE1F6C379421E92E37F16FEBAFBB5324A1685DC6ADD21C4FD1561CC2"
+    },
+    {
+      "file": "src/two-player/build-probe.ps1",
+      "bytes": 11070,
+      "sha256": "D770E3BE00C55F70FBDD2C1A5C8D274C61D4C9074179EBECA3E6C1E281739006"
+    },
+    {
+      "file": "src/two-player/build-steam-launcher.ps1",
+      "bytes": 805,
+      "sha256": "2B972795CE8A2D941ED3F157661D441544CD69E8C3A5F8D2889AF42C9755A53E"
+    },
+    {
+      "file": "src/two-player/CannonFlightProtocol.cs",
+      "bytes": 2520,
+      "sha256": "F6CF13534E2AAD5CDC17390D974AF04FB722AC4AB97D10ADADD72493B0C26B87"
+    },
+    {
+      "file": "src/two-player/CannonFlightSync.cs",
+      "bytes": 18227,
+      "sha256": "EC26B0C8BA36CFA7683B72FE955206606DEC25B912ECFFC55650A86036038700"
+    },
+    {
+      "file": "src/two-player/CannonLaunchSync.cs",
+      "bytes": 7253,
+      "sha256": "2B2D33897DB85D03D9C8619ADD908B89C275FB03DD00A43C45987A1547DB7EE6"
+    },
+    {
+      "file": "src/two-player/CannonStateSync.cs",
+      "bytes": 18194,
+      "sha256": "8F4B357CDF98554B3FB072B13AA63562E66FFBBF37E54D385A598E2C9E273A8A"
+    },
+    {
+      "file": "src/two-player/CharmingGhostNative.cs",
+      "bytes": 3903,
+      "sha256": "CF422F2765CA4DC5516A0B29C8561D015FE62BB8A9AE5304A4E70A8569E5B4F6"
+    },
+    {
+      "file": "src/two-player/CharmingGhostPlayback.cs",
+      "bytes": 2819,
+      "sha256": "D7319E1705E6D8603E3B99BBDFED354A7E069734F1493E59FDBDCA9090AD9AD6"
+    },
+    {
+      "file": "src/two-player/CharmingGhostSync.cs",
+      "bytes": 2764,
+      "sha256": "4AB5235F243C93013EC2F86C5D82E70AED9AF43767A68CDD9D8AE40E026E5D6E"
+    },
+    {
+      "file": "src/two-player/Collect-Guest.cmd",
+      "bytes": 125,
+      "sha256": "DAC5897CF48AD3B084B329ACE931A02D8170644C1C91E459820EEE6A9076A4C4"
+    },
+    {
+      "file": "src/two-player/Collect-Host.cmd",
+      "bytes": 124,
+      "sha256": "ED61FC8098235660574399B1C7B8C9F8D7EBCAF1615FBEF69D6D5684C530FD77"
+    },
+    {
+      "file": "src/two-player/CombatPlayback.cs",
+      "bytes": 16546,
+      "sha256": "8245B43335CFDBD850CD94ED24D87B7E2883CDC6B7226A7F4391A459B514B2B7"
+    },
+    {
+      "file": "src/two-player/control_file.py",
+      "bytes": 3809,
+      "sha256": "0CD9E43195A8498C382C8E400682985A30CDD2E0003E8BD2FC2670885382C0D4"
+    },
+    {
+      "file": "src/two-player/ControlledCrew.cs",
+      "bytes": 9534,
+      "sha256": "5481BF166139091E40871111728C4AC93E4617539CC4CF77F2A1468D24D9A043"
+    },
+    {
+      "file": "src/two-player/ControlNative.cs",
+      "bytes": 4125,
+      "sha256": "3FAC246551B912A66C7C8C22B4D5E67E61BD572FA9EAFE1B8A10DF8427471E0E"
+    },
+    {
+      "file": "src/two-player/ControlPlayback.cs",
+      "bytes": 2893,
+      "sha256": "4B101E93F3864020773444E0BC4042E3A6E04579DAB85B1A9DB4088685F178EC"
+    },
+    {
+      "file": "src/two-player/ControlStateSync.cs",
+      "bytes": 3632,
+      "sha256": "2DAC12BD0E801B44DDE8D1B507FF5BE4DD42D67BE568EEBDEECBCECAC4DA73EA"
+    },
+    {
+      "file": "src/two-player/CoopInvite.cs",
+      "bytes": 4081,
+      "sha256": "9356382EE4D99CD8E4A9E4C2A4D86AAA22797CF743D58908DC196A29EF4EFA8B"
+    },
+    {
+      "file": "src/two-player/CoopPerformance.cs",
+      "bytes": 2703,
+      "sha256": "A576020206514EEED96D9B671FA5DCAB3B6284C0E8FAF51EF8546D2035FE0601"
+    },
+    {
+      "file": "src/two-player/CoopWaitLock.cs",
+      "bytes": 5644,
+      "sha256": "7982FA75B13B4433576CF17D835F1D440FB2CD915F9F65381A62E0896DEA4077"
+    },
+    {
+      "file": "src/two-player/CoverSync.cs",
+      "bytes": 8578,
+      "sha256": "37E706D6726516808F895873C8143DC9D2799EE2E3BB7DBBE8138834FD45303E"
+    },
+    {
+      "file": "src/two-player/CrewFollower.cs",
+      "bytes": 4736,
+      "sha256": "99B56FA1CC8E5E4D858F3B8BD53B47F3A3BF55E84232A465E18EF9568EDD5E4A"
+    },
+    {
+      "file": "src/two-player/CrewOwnershipReplica.cs",
+      "bytes": 1676,
+      "sha256": "42DC96A071C804216ECB873975381FB6B3C8D94DC8D9DB7A45A16CAF59659E87"
+    },
+    {
+      "file": "src/two-player/CrewRosterProtocol.cs",
+      "bytes": 57645,
+      "sha256": "0EAC1D60CBB003CB76E55DA14F161EF2E96F1085692FBD06213AF90BB386710C"
+    },
+    {
+      "file": "src/two-player/CrewRosterSync.cs",
+      "bytes": 13075,
+      "sha256": "67C099692852AEC72979190F46FC02A0458A063047BC46790B8A2C76D686E9B2"
+    },
+    {
+      "file": "src/two-player/CrewRoutePlayback.cs",
+      "bytes": 4707,
+      "sha256": "BEAF1D6D8C1E0772D32C9AAE660E3CE8672F32960EC4410FD2F69122547E013E"
+    },
+    {
+      "file": "src/two-player/CrewSync.cs",
+      "bytes": 59323,
+      "sha256": "A58EC4131BCC3B4F7309EA737E6CD08F696600A73F7DE755A89C60A718882D28"
+    },
+    {
+      "file": "src/two-player/CrewWaitGroup.cs",
+      "bytes": 2405,
+      "sha256": "F934896F767A08F896F1A908A623BF837A03AEF290ACBBAFE5F6D2F6415C3952"
+    },
+    {
+      "file": "src/two-player/DigStateSync.cs",
+      "bytes": 10563,
+      "sha256": "FC86D18F337EB54692E36D1F46809CB31D9D9C0AEEE4DB1CE589C763F927AB08"
+    },
+    {
+      "file": "src/two-player/EffectProcessClock.cs",
+      "bytes": 2493,
+      "sha256": "BFA924CC5C52862AD9CAC72E9AEB81D18AB65234858D0B1AA28D94592C0F958D"
+    },
+    {
+      "file": "src/two-player/EnemyRewind.cs",
+      "bytes": 12220,
+      "sha256": "EBC5A1910D8B4F6E68506E7B04C9B6D758A069553A3909F6B9A590876E6489B4"
+    },
+    {
+      "file": "src/two-player/FishingItemProtocol.cs",
+      "bytes": 2039,
+      "sha256": "14B7245FC7200B3078EC942972727B84CEDF03D738FBB7F321ECDC78AE1AABC1"
+    },
+    {
+      "file": "src/two-player/FishingItemSync.cs",
+      "bytes": 14860,
+      "sha256": "7EFD921ABB9BE0083CE082B79028615FF71159BE21944DBC41D3AD07637F9F1D"
+    },
+    {
+      "file": "src/two-player/FishingPullProtocol.cs",
+      "bytes": 5871,
+      "sha256": "4CF5905A0496203B60851AD7A70BD5703A718B64C8AF884CD1F8F3E7BDAD16BD"
+    },
+    {
+      "file": "src/two-player/FishingPullSync.cs",
+      "bytes": 20587,
+      "sha256": "0289DE5DE29F986E65BD4D1B4D48C2D3397FA08EE0215301F316D5BB071E50C7"
+    },
+    {
+      "file": "src/two-player/FlightCastRecovery.cs",
+      "bytes": 3813,
+      "sha256": "EE3EB9CD0DD802625C2A0C2C3BF0340A305BA9F4A3E3AA18F33DA5AEA856B5EE"
+    },
+    {
+      "file": "src/two-player/FlightPageBudget.cs",
+      "bytes": 7027,
+      "sha256": "4DAEA10C47C4BD5F9CBC3F2F4087C8545323C5603E4D9C4D05CA5D2848EE3599"
+    },
+    {
+      "file": "src/two-player/FootprintProtocol.cs",
+      "bytes": 2374,
+      "sha256": "048D14435BC4ED8DE451A9BC3F5625AED78CCA34F4A3CE7E761065986E615F24"
+    },
+    {
+      "file": "src/two-player/FootprintSync.cs",
+      "bytes": 9259,
+      "sha256": "44DEA5B4F96639D2B6897EDA009E6DCFB04D444881EB48418AD726468AE81FE2"
+    },
+    {
+      "file": "src/two-player/FrozenDuelSync.cs",
+      "bytes": 11116,
+      "sha256": "D95C4B6731398DE4CAC3977EE7579BB327C1D27B4C94AC55111DB209C90D71C8"
+    },
+    {
+      "file": "src/two-player/FrozenProcessClock.cs",
+      "bytes": 5738,
+      "sha256": "BEEA543365917989AB6F060196234BDA2142DACA9D3AE9DF732A86251B4869FA"
+    },
+    {
+      "file": "src/two-player/FrozenSync.cs",
+      "bytes": 15051,
+      "sha256": "747DFBAD8C18C5F69BFEAD8A723D356EB54EA25D5596E8AA1A0FF7B0A295BB9A"
+    },
+    {
+      "file": "src/two-player/GameSpeedSync.cs",
+      "bytes": 4227,
+      "sha256": "2103D6A355EC37D275BB3B71DBED08317B9B73FB1FC84425D9A36666BACD518E"
+    },
+    {
+      "file": "src/two-player/gateway_lifetime.py",
+      "bytes": 1675,
+      "sha256": "2BED3D3877491A4AACE85EB18405F92E2D4352F2EE01FB50B1F27A785F4933C0"
+    },
+    {
+      "file": "src/two-player/gateway_pairing.py",
+      "bytes": 1961,
+      "sha256": "8FECFB4102975C97865A7A368A7D1EBD7C7E1BDD0F7C4946FF0857558DCDFA81"
+    },
+    {
+      "file": "src/two-player/GhostObjectSync.cs",
+      "bytes": 15306,
+      "sha256": "25C6FC1755C99671E51BBDA455B28B9F83E91FA94EA15EBA71DF28EC99737C8B"
+    },
+    {
+      "file": "src/two-player/GroundClickPolicy.cs",
+      "bytes": 526,
+      "sha256": "3B559AD2853B5B5685529A22EB0930470EE27410CB5FCBBD87F184D1910E864A"
+    },
+    {
+      "file": "src/two-player/GuardAuthority.cs",
+      "bytes": 6289,
+      "sha256": "6B6CBC8895E5A775A59D9E289570CBD214F9ADF74674A1A12E6DB569B725A633"
+    },
+    {
+      "file": "src/two-player/GuardDiagnostics.cs",
+      "bytes": 7413,
+      "sha256": "58753F232A3A878CF9EAA184581F5B23BEE4924C6E150DA13B2C4C2F143B0824"
+    },
+    {
+      "file": "src/two-player/GuardIcons.cs",
+      "bytes": 3648,
+      "sha256": "8CA85BD006A07B4D2298C5539B5C879494E1BA6132A97A890881109A6EC97B4A"
+    },
+    {
+      "file": "src/two-player/GuardOutcomes.cs",
+      "bytes": 8656,
+      "sha256": "09AAF8D5134346AB08364CAA6F96A8F337A6CD567330634F1B19CB72E308C97E"
+    },
+    {
+      "file": "src/two-player/GuardPursuit.cs",
+      "bytes": 54375,
+      "sha256": "07571FB5CFFD09317EC68D379267C60A83FF0F535BD06FF4FF913D1F5650ED49"
+    },
+    {
+      "file": "src/two-player/GuestActorIntent.cs",
+      "bytes": 2463,
+      "sha256": "996E77FE57B982C3615B278912E19C4B20D1042B9330EE0F2F43DD54895F80A6"
+    },
+    {
+      "file": "src/two-player/GuestActorRequests.cs",
+      "bytes": 1606,
+      "sha256": "4779F847BDAFD1B2FD8077F8087DDA59BA377A2D05A4EBE4A6864A97B58ECC23"
+    },
+    {
+      "file": "src/two-player/GuestCommandQueue.cs",
+      "bytes": 4366,
+      "sha256": "45BD11450434AD2B4CA5D2B9E6D4C539132873D53BA08E7B8E215DC21D22A38D"
+    },
+    {
+      "file": "src/two-player/GuestCrewSelection.cs",
+      "bytes": 8673,
+      "sha256": "293956C645AECFB3C938DAB7A4AAC34231CA140732E2A1DCBDD9D412D748274A"
+    },
+    {
+      "file": "src/two-player/GuestDisposal.cs",
+      "bytes": 6855,
+      "sha256": "9437D1AA6A358A33F75F83C9772439DA2C924D0C362E0043D7576981388A06E7"
+    },
+    {
+      "file": "src/two-player/GuestExitCollection.cs",
+      "bytes": 1662,
+      "sha256": "4F4EF7F1004EB875628F05D66FEF7D72C875EBA2F300B4488524D41F3D9B03B6"
+    },
+    {
+      "file": "src/two-player/GuestGestureState.cs",
+      "bytes": 1828,
+      "sha256": "F81208C0B5E22EBC5AE80761ECB49EEE9153984EFB124FAADD584CC0DDC3C3A7"
+    },
+    {
+      "file": "src/two-player/GuestGroundTarget.cs",
+      "bytes": 18193,
+      "sha256": "D71D233D1456EEF3DDAAF76D429D6999E16B69B36499518543F6ADF43014342B"
+    },
+    {
+      "file": "src/two-player/GuestLadderSnapshot.cs",
+      "bytes": 3619,
+      "sha256": "D7BB566FB3FD4905C4C1B660916F8203DF6349B335A3ED09849CDD839AB9BC50"
+    },
+    {
+      "file": "src/two-player/GuestMissionPreparation.cs",
+      "bytes": 14732,
+      "sha256": "456D3A8771179E0F226B33DCE922FEFACE3EA1F2CB8B87F52884D81509803514"
+    },
+    {
+      "file": "src/two-player/GuestMouseSnapshot.cs",
+      "bytes": 2578,
+      "sha256": "D681E0B8B2B42C9225578CDC2275B4A2D1A8E3174030FB42D410F79C786423CD"
+    },
+    {
+      "file": "src/two-player/GuestMove.cs",
+      "bytes": 9888,
+      "sha256": "8A39D680BBC0B1E75AB29622F417646D8B379195C071F871CCFAE7B9825BE449"
+    },
+    {
+      "file": "src/two-player/GuestOrderVersions.cs",
+      "bytes": 1153,
+      "sha256": "052ED746319D4865E0BF068867DCB5F5D14C8643BFDA845B3CC5B665269C4D2C"
+    },
+    {
+      "file": "src/two-player/GuestPreview.cs",
+      "bytes": 11927,
+      "sha256": "FAB72A65C23A45787E80ADADE7DE1A81EBC2D51CF7317E5A1C057CBAE05087CC"
+    },
+    {
+      "file": "src/two-player/GuestSkillPreview.cs",
+      "bytes": 6799,
+      "sha256": "61550FF8D18A732002A98F2CF80CA6E3F0C1A199C99A31CBBF03202BDACF0968"
+    },
+    {
+      "file": "src/two-player/GuestWorldMap.cs",
+      "bytes": 6064,
+      "sha256": "E01B4A674DCE3ED59B2F1084E759B2B7C920F8A6D3EEFE32C9654503BB7CCFD3"
+    },
+    {
+      "file": "src/two-player/HostCrewOrders.cs",
+      "bytes": 36808,
+      "sha256": "8A6E894F34A63FFE71813A6BAB20D41CE778A13CAF091CF615528299267569D4"
+    },
+    {
+      "file": "src/two-player/HostCrewSelection.cs",
+      "bytes": 13752,
+      "sha256": "74EA63D5CA21743B8C33638284FA0E6B4563D6B9ABB62A18B8A722D9EE0FDFD7"
+    },
+    {
+      "file": "src/two-player/HostLoadingView.cs",
+      "bytes": 1007,
+      "sha256": "74B268DAF1239241D16CD9A7B5C883B7B610B7B1AB4A55C6228E10CE441E4F6E"
+    },
+    {
+      "file": "src/two-player/InteractionProtocol.cs",
+      "bytes": 5221,
+      "sha256": "3AA6F75FDB8DD55369E8BB892278D6D1B9F68AC2030E1968F199A2B8FFC1AFF4"
+    },
+    {
+      "file": "src/two-player/InteractionSync.cs",
+      "bytes": 40294,
+      "sha256": "C1A77F888895D458EC574CE2C2632FF7A9CC16E2B7053A9E2648502E7ADA7475"
+    },
+    {
+      "file": "src/two-player/lan-discovery.py",
+      "bytes": 1922,
+      "sha256": "1D749198C45E9D31BB229A4697E392C4765B54EA6970D9D1CF3B7997B1DF7891"
+    },
+    {
+      "file": "src/two-player/lan_remote.py",
+      "bytes": 35449,
+      "sha256": "EF2B031CE0E2F06AAFD3C88D83DD81EB33C573A128E3D291C1CA1F9F5F72AC56"
+    },
+    {
+      "file": "src/two-player/LanStateFeed.cs",
+      "bytes": 6371,
+      "sha256": "474AA5B73EC9B3CD256B06993E9444065A0CD4001CC141C79B6FB1FDEA400B90"
+    },
+    {
+      "file": "src/two-player/LaunchMode.cs",
+      "bytes": 2935,
+      "sha256": "9A02A269D74E28C7BFDB63AE2BFAF7A7F28770C29DF86F9D4AB6C6280B49DEA6"
+    },
+    {
+      "file": "src/two-player/lobby_broker.py",
+      "bytes": 17826,
+      "sha256": "B4F0C1B4DE69AD9D534797D764771F3CB21F1AEE4509D6B5C909BAEC01BBC91F"
+    },
+    {
+      "file": "src/two-player/LobbyDeployment.cs",
+      "bytes": 2653,
+      "sha256": "63663D2F721ECA852843FD06893FA9CB212C1D31C69D21E56109FE31CCAB85C2"
+    },
+    {
+      "file": "src/two-player/LobbyGuest.cs",
+      "bytes": 4050,
+      "sha256": "73FA83AB1627604436F782ADB262E1416B35019DD1DF3685D1A89C642CC95617"
+    },
+    {
+      "file": "src/two-player/LobbyHost.cs",
+      "bytes": 13743,
+      "sha256": "CA138D86D21EB013BD2A2C88B344A54AF9991766C7B881B6F04CB72CA9DE8529"
+    },
+    {
+      "file": "src/two-player/LobbyProtocol.cs",
+      "bytes": 5480,
+      "sha256": "3471CE1FFAA81EC4AA079EF8D1C4CFA947E868838E9DFB74326D047796629EA5"
+    },
+    {
+      "file": "src/two-player/LobbySelectionHooks.cs",
+      "bytes": 3407,
+      "sha256": "F517473229A63FB6E98771FCB5D69118D4E7C4E3B8E46E1B9A93B5A398D24449"
+    },
+    {
+      "file": "src/two-player/LoopbackMove.cs",
+      "bytes": 2545,
+      "sha256": "C4BC87C2AD48E698B337D9F00E8D7C17D6B58060ABC77A46704F2CC54FB33691"
+    },
+    {
+      "file": "src/two-player/LoopbackProtocol.cs",
+      "bytes": 4604,
+      "sha256": "CD47C9D5894BBA2AEF8DC4C49E6CCA038CACD11F25342CBA673C1FB8F97BF594"
+    },
+    {
+      "file": "src/two-player/Melee.cs",
+      "bytes": 3429,
+      "sha256": "286998FF5A41B8175B5766B8CA85235CE51FA698E9E6A49EA46C5A5D5CDDAEB0"
+    },
+    {
+      "file": "src/two-player/MimicChoice.cs",
+      "bytes": 4099,
+      "sha256": "BD053361988A2A30BE66680D17DE83F505589E71B99B576BD2316B144B68CF9D"
+    },
+    {
+      "file": "src/two-player/MimicNative.cs",
+      "bytes": 4489,
+      "sha256": "AC698DC237F70615CCBE22DB76F56857B302EB2B17FFCEC4CA33F7004A895639"
+    },
+    {
+      "file": "src/two-player/MimicStateSync.cs",
+      "bytes": 4543,
+      "sha256": "C58317A39FC48358C2E7E3789777336E15DC22A01B93187DFAF84AE59A878618"
+    },
+    {
+      "file": "src/two-player/MissionEntrySync.cs",
+      "bytes": 7725,
+      "sha256": "AA970C7D7EB193BC02563BEAED42309545493EC351597D87662E230030D2F3C3"
+    },
+    {
+      "file": "src/two-player/MissionEntryTrace.cs",
+      "bytes": 7904,
+      "sha256": "CBBB7B510528DB4889773D188EC261376BCAC3E815D1F78CAB999FD8FF3F7459"
+    },
+    {
+      "file": "src/two-player/MovementLineLoadRepair.cs",
+      "bytes": 1947,
+      "sha256": "F2A31890EEDB4D33CCE7D4F618F3FDC0F278BE0286353FFDD9F77EB346D1D179"
+    },
+    {
+      "file": "src/two-player/MoveProbe.cs",
+      "bytes": 113741,
+      "sha256": "3C94CA68ACD6691DAB93C0A3EA370549BDCD87DFCFC7640412E1CDE650A1C8DC"
+    },
+    {
+      "file": "src/two-player/native-ui-reference.json",
+      "bytes": 2927,
+      "sha256": "AE2BB836DA2959FDA4C54B3A297786014C8B47D9F14B5180D23747577B9BAFAF"
+    },
+    {
+      "file": "src/two-player/native_tcp.py",
+      "bytes": 5748,
+      "sha256": "5997B053ACCD046E2AA4D0478EB9779D75C178A1379E1FBB7E280DF4866B8F8C"
+    },
+    {
+      "file": "src/two-player/NativeDetectionProfile.cs",
+      "bytes": 2444,
+      "sha256": "4C98BF942F4258CCC9CA9F6E8FAA0A1070348E332C2C4BA1764CF3251D10A6A6"
+    },
+    {
+      "file": "src/two-player/NativeGait.cs",
+      "bytes": 10579,
+      "sha256": "5907EA1032C33821E31CF032558D3AD37BCC98297C0B846ADDC5982DD1027A07"
+    },
+    {
+      "file": "src/two-player/NativeInput.cs",
+      "bytes": 18699,
+      "sha256": "6C4B4B9A3C09C1E1F0749C4271E8369B5CB57B1A48E323984FBBADA2D56256CA"
+    },
+    {
+      "file": "src/two-player/NativeSkillHooks.cs",
+      "bytes": 4621,
+      "sha256": "FDEB91FFF9FDFD558A4978262290A5621B5051867A1770A14753233658A3886A"
+    },
+    {
+      "file": "src/two-player/NativeSkillProbe.cs",
+      "bytes": 9113,
+      "sha256": "ED1F351096F3FAAF45F73BB6CB0076E31AC84B8EBB6006365BDD30A0257186C5"
+    },
+    {
+      "file": "src/two-player/NativeUiEvidence.cs",
+      "bytes": 6846,
+      "sha256": "F3F629496561EE15C93E12EBE7E1457681A656F05041E4F8B15F146F1E6885FE"
+    },
+    {
+      "file": "src/two-player/PeerPace.cs",
+      "bytes": 4182,
+      "sha256": "067B378EB0D8B37363B6A205C6CE22887F9B300083F396AA0CD0AA118CEC5AB2"
+    },
+    {
+      "file": "src/two-player/PlanningNative.cs",
+      "bytes": 9237,
+      "sha256": "7309A50AA1A6677DA8E1F9987072E164F6D0B7D469A908222507B30A62328A0B"
+    },
+    {
+      "file": "src/two-player/PlanningSync.cs",
+      "bytes": 10444,
+      "sha256": "F8A6607F6ACCB5147E0C21323ADD84C2BD01999BECE56E93CF7A47A55B03FFAB"
+    },
+    {
+      "file": "src/two-player/PlanningWire.cs",
+      "bytes": 3803,
+      "sha256": "9FC36D87D5A79235AC9DDE3167D2B5E8180602A9B3888BD033392284AB5BC024"
+    },
+    {
+      "file": "src/two-player/ReinforcementSync.cs",
+      "bytes": 3367,
+      "sha256": "648AE97A71E262BD03E4A2E2C159DC2A993BDC7C3615F783257F71BC2C0EAFCD"
+    },
+    {
+      "file": "src/two-player/room-address.ps1",
+      "bytes": 6926,
+      "sha256": "B3D038C326F0952B5E090FD140E9D482716DD64DA54060423E4B2C8734821793"
+    },
+    {
+      "file": "src/two-player/runtime-files.json",
+      "bytes": 940,
+      "sha256": "D8A94548397A2838A9ACCC55DBD457837BE04FAF256D5D9A954B0A543528BFC5"
+    },
+    {
+      "file": "src/two-player/save_transfer.py",
+      "bytes": 6040,
+      "sha256": "0DAF9DD92ACAB6F352DE64030C6A3C77D47B42E54D33185ABAA75E3866242C77"
+    },
+    {
+      "file": "src/two-player/SceneEpoch.cs",
+      "bytes": 1209,
+      "sha256": "398EE4E55BCE58EBF0C0684DFB92248A04EF1FDA459C92751DB130DD6B709D37"
+    },
+    {
+      "file": "src/two-player/SceneLookup.cs",
+      "bytes": 1427,
+      "sha256": "8BD914C44EC3D1642454DEC6AF3FEF1094D5C5EB917D5899826F3E5B440FEA0F"
+    },
+    {
+      "file": "src/two-player/SceneLookupSlot.cs",
+      "bytes": 793,
+      "sha256": "1C1ED1D657E69C4122014422D1D9F13EE72E7DD87248A1CE2DD15EF1E5042275"
+    },
+    {
+      "file": "src/two-player/send_move.py",
+      "bytes": 1687,
+      "sha256": "FA9E84806DB2D5BB8F1B8D7E802988ED487EF47517098D32C0459CEE836913E5"
+    },
+    {
+      "file": "src/two-player/session-next/CrewOwnership.cs",
+      "bytes": 6070,
+      "sha256": "208A49DCE2855B6D1B961252FC3A8B05EC3E3234DA645D1DEB44F9EEF1D93701"
+    },
+    {
+      "file": "src/two-player/session-next/EnemyRewindTests.cs",
+      "bytes": 6594,
+      "sha256": "2A8B6853FB67B43943FE8A3CE0499B2BA83994D3E7410DCBEEFCC239554431EE"
+    },
+    {
+      "file": "src/two-player/session-next/FrameworkJsonCompat.cs",
+      "bytes": 2165,
+      "sha256": "FC1C665617AF4BF41BD41C06904354D4DB13671D7A81B8A366BFB327F4867613"
+    },
+    {
+      "file": "src/two-player/session-next/GuestPrepareProgress.cs",
+      "bytes": 3754,
+      "sha256": "4794879D3FA0EE61FDDE071FFA8B616A384325DBE911B6690B0E7C2FD4C91207"
+    },
+    {
+      "file": "src/two-player/session-next/GuestSavePrepare.cs",
+      "bytes": 32346,
+      "sha256": "9DE48595718A4229E5902BE835492A92E206A03E657B3444832E8CC6AA70BDD8"
+    },
+    {
+      "file": "src/two-player/session-next/LiveImportTests.cs",
+      "bytes": 19313,
+      "sha256": "6F9E414D8442C8CA5518172F37D21669CCB48E26D79FC2814776A834425784D4"
+    },
+    {
+      "file": "src/two-player/session-next/load-preparer.ps1",
+      "bytes": 368,
+      "sha256": "305842E7DBFC4492BB7716288C6371BE10B3504DAD1077D9F62870C3155A662B"
+    },
+    {
+      "file": "src/two-player/session-next/LobbyHostTests.cs",
+      "bytes": 15846,
+      "sha256": "5490F110FBBFF99C3CAAE6D6FE281F5F80211919FA3DCA0D213BBCF28BF85022"
+    },
+    {
+      "file": "src/two-player/session-next/NativeTcpBridge.cs",
+      "bytes": 8401,
+      "sha256": "3C5EE28889821051B72B7C68B587F043C3801776CE0E2B793B931E3792BC44A6"
+    },
+    {
+      "file": "src/two-player/session-next/prepare-guest.ps1",
+      "bytes": 1746,
+      "sha256": "0925C4BF8F9C8CAABDC3BD68DC61CFB074647D16326BE16C0772C6C8FBEBDF7C"
+    },
+    {
+      "file": "src/two-player/session-next/save_bundle.py",
+      "bytes": 4755,
+      "sha256": "6B9C10C519CA63D328DE431E571BC9554267F3EDB3F29EB02970771A7AA1E5B1"
+    },
+    {
+      "file": "src/two-player/session-next/SceneFollowTests.cs",
+      "bytes": 13363,
+      "sha256": "BE80EA92E421358721F9469EEDD947E63FFBAB38893F4A7AB98037A5DE5BC513"
+    },
+    {
+      "file": "src/two-player/session-next/test-bootstrap.ps1",
+      "bytes": 27767,
+      "sha256": "86FC75FF59DA3C80BB28F5BCD02F4E5D25F303776DA4873B0C23AAF39CDB8021"
+    },
+    {
+      "file": "src/two-player/session-next/test-enemy-rewind-context.ps1",
+      "bytes": 330,
+      "sha256": "E1F6A80ACCDC50D4516A4B893771292E236295EA7486C1685A33710C0732C4C1"
+    },
+    {
+      "file": "src/two-player/session-next/test-entry-lookup-performance.ps1",
+      "bytes": 14135,
+      "sha256": "E52191105B8D0F364DD0BA846680261E23CD892F1E0AE80FA95CF60290683E9C"
+    },
+    {
+      "file": "src/two-player/session-next/test-game-process.ps1",
+      "bytes": 4407,
+      "sha256": "5C1386462991A65EA08C99C27BB1B1DA625C71D1B9BE1F5F348666F5A4FE38C7"
+    },
+    {
+      "file": "src/two-player/session-next/test-launch-mode.ps1",
+      "bytes": 5334,
+      "sha256": "388F2C031BF3B4EC988170EE591353EE474C8E746F85F7BA1210321776065667"
+    },
+    {
+      "file": "src/two-player/session-next/test-launch-request-isolation.ps1",
+      "bytes": 2730,
+      "sha256": "10B4615AD80964B8F74D186DDCE0393341B4A3C8DD9604F05699574BE66CFBC2"
+    },
+    {
+      "file": "src/two-player/session-next/test-live-import.ps1",
+      "bytes": 598,
+      "sha256": "18AB62EB7444C9B33AF60448CF60A713471002C7C4AC3F465DD64D6B6273405E"
+    },
+    {
+      "file": "src/two-player/session-next/test-lobby-host.ps1",
+      "bytes": 1111,
+      "sha256": "EA02BDCB4DACF2326AAB3AFFD4AE5B49724F9C57260AA816AA704F6B0C6ACA98"
+    },
+    {
+      "file": "src/two-player/session-next/test-scene-follow.ps1",
+      "bytes": 454,
+      "sha256": "4BA550F9EF1FBD7A3071F508FA25710A42BAC6498B25831BD90CD68F1A84C815"
+    },
+    {
+      "file": "src/two-player/session-next/test-udp-parsing.ps1",
+      "bytes": 3976,
+      "sha256": "3DC565389690B9A5F22C1C538FA831CA1F75E5718CBA7E32D83245E19E34248D"
+    },
+    {
+      "file": "src/two-player/session-next/test_session_broker.py",
+      "bytes": 17893,
+      "sha256": "7CBC41D7ED9CA1D057DFE549B769DF490AB22FED79012B4E84642C32BFD25074"
+    },
+    {
+      "file": "src/two-player/session-next/UdpParsingTests.cs",
+      "bytes": 5589,
+      "sha256": "D13EFF08BAE89C102D89745BD3D4B878B2F3C465147BE03B7EF59D873CE0FCD2"
+    },
+    {
+      "file": "src/two-player/session_broker.py",
+      "bytes": 13851,
+      "sha256": "E746EE606F80701B2B9F48E174ED2D3008C1A3CE6686AEBB2B2ED695960D0D40"
+    },
+    {
+      "file": "src/two-player/SessionBootstrap.cs",
+      "bytes": 27384,
+      "sha256": "2D194BB02829B13F15673EE99C8D7592F1ECBDF28DC66548D621A3FF667AAD09"
+    },
+    {
+      "file": "src/two-player/SessionGuestBarrier.cs",
+      "bytes": 6613,
+      "sha256": "987EF5B1412EF86ACA3A18D7E551A1E3BE53C9090B334BA5662E6429BBC9A6BA"
+    },
+    {
+      "file": "src/two-player/SessionHost.cs",
+      "bytes": 26368,
+      "sha256": "9DA8F3489BB4BBEA2D2DD9C714EDF42638DECBC61F01CBCFA1DD729C069547E1"
+    },
+    {
+      "file": "src/two-player/SessionIndexRefresh.cs",
+      "bytes": 8203,
+      "sha256": "CC8D21E7939E9914531E5B89A72332A3B437BBD1D70209912D740FEA18689305"
+    },
+    {
+      "file": "src/two-player/SessionLiveImport.cs",
+      "bytes": 20146,
+      "sha256": "98F7C931DC77166D61EA4043B9458863AC939EB0AE1B696FB23671BE88AE77E0"
+    },
+    {
+      "file": "src/two-player/SessionQuickReload.cs",
+      "bytes": 3621,
+      "sha256": "CAAA98FCB23C88532FED56567B8C250B7556B17A4236E5FAC3CB9084F196610C"
+    },
+    {
+      "file": "src/two-player/SessionSceneFollow.cs",
+      "bytes": 9264,
+      "sha256": "095F1739747BA74F5F201EF54DF0312C9EDF3CAAEF93D9D53612E38AAED07622"
+    },
+    {
+      "file": "src/two-player/SessionTaskContinue.cs",
+      "bytes": 1727,
+      "sha256": "FDC792F9C2E8F5EA572DE1CA7312C21C25CBD0C1F58D8DC285F36603D5776F3A"
+    },
+    {
+      "file": "src/two-player/SessionWorld.cs",
+      "bytes": 5501,
+      "sha256": "406EC72AC384B79926822893F90FBC4E372C228E97D5B440E026F41282AE2CDF"
+    },
+    {
+      "file": "src/two-player/Setup-Steam.cmd",
+      "bytes": 70,
+      "sha256": "72AAC1DEC966B552AF74951D69E5354FC46D8096C3AB7A3C3C6FB8A6C39C8AC8"
+    },
+    {
+      "file": "src/two-player/ShipCrewLease.cs",
+      "bytes": 2840,
+      "sha256": "D4B14C510DDEB531776FDF43B296CA24196BEFE98C9467C1083ED41FB46889F0"
+    },
+    {
+      "file": "src/two-player/ShipCrewSession.cs",
+      "bytes": 6693,
+      "sha256": "4935D51F11290B5B03BF6746255E2AEB01C8CE44835CD7155ECB7246AABDC442"
+    },
+    {
+      "file": "src/two-player/ShipRoutineProtocol.cs",
+      "bytes": 1347,
+      "sha256": "1F14A400D8D410AE2F2F5B04F8EAD9921973B6EE03C10394BB3B401CD0851C12"
+    },
+    {
+      "file": "src/two-player/ShipRoutineSync.cs",
+      "bytes": 5358,
+      "sha256": "3849A90037DBC7498FAEACA88C2B1A4B9340C7151BDF5BB72BFAF1E834381F78"
+    },
+    {
+      "file": "src/two-player/skill-protocol.json",
+      "bytes": 17966,
+      "sha256": "45E678C3978F1703EAF6F46E6661247B0C3479E703B158763984B81725827973"
+    },
+    {
+      "file": "src/two-player/SkillLifecycleTrace.cs",
+      "bytes": 14604,
+      "sha256": "7C401124459E939222F071318DA8A59447D86440C5D2247F6B4DEA78E0CFE44D"
+    },
+    {
+      "file": "src/two-player/SkillObjectRegistry.cs",
+      "bytes": 2933,
+      "sha256": "EDA1666E608A73C5647D0F55BC5AE314BF4B506BADB50B8433E86601AB73CED9"
+    },
+    {
+      "file": "src/two-player/SkillObjectSync.cs",
+      "bytes": 7396,
+      "sha256": "55A999874795564B27190CAAE8696F2D9AEADE82D8F72033B60A890BB3CA9E37"
+    },
+    {
+      "file": "src/two-player/SkillResourceSync.cs",
+      "bytes": 10153,
+      "sha256": "E0D72BD4498A729FFD2F1D5F7D0604600B7BE38320A8B24E1C1D38DD0C046F1D"
+    },
+    {
+      "file": "src/two-player/SnapshotTransport.cs",
+      "bytes": 4527,
+      "sha256": "EC815F90B8DCC68FE28A3BE1B226EBE380A782C6883CED31073492DC650DAF5E"
+    },
+    {
+      "file": "src/two-player/start-room.ps1",
+      "bytes": 23681,
+      "sha256": "6AD1ADD398A49FD884F4CA1438E3602031AC7B8D7EA99237984ABE7A420D01D2"
+    },
+    {
+      "file": "src/two-player/Steam-Coop.vbs",
+      "bytes": 2443,
+      "sha256": "247FB3236095F418DF4BD0D07D17AB19027DEA1CF75F47934CCF6AC5F3FA849E"
+    },
+    {
+      "file": "src/two-player/Steam-Guest.vbs",
+      "bytes": 2423,
+      "sha256": "0B7AC067420AEC339392FC36FAE8E58CC2D6E57A29B03D0C2791681B019AB895"
+    },
+    {
+      "file": "src/two-player/steam-join.ps1",
+      "bytes": 7711,
+      "sha256": "D07389A032828A06403E3547FD54536300F71ADB617277E45B264C50057A57C6"
+    },
+    {
+      "file": "src/two-player/steam-launch-common.ps1",
+      "bytes": 13336,
+      "sha256": "5B73853A42570FA90B66D6DC9DA65AF22031DDBED45E76C0124A42F5008B0546"
+    },
+    {
+      "file": "src/two-player/steam-role.ps1",
+      "bytes": 4952,
+      "sha256": "F311C8A250FED2042D3E072D447065FF3274C3C952C699DBD9CFFBDAA42698DC"
+    },
+    {
+      "file": "src/two-player/steam-start.ps1",
+      "bytes": 12914,
+      "sha256": "EBFEC93E4CC351985F54051B121793E4503016B8A2BE6D8699BD97CF5C711888"
+    },
+    {
+      "file": "src/two-player/SteamLauncherHost.cs",
+      "bytes": 2712,
+      "sha256": "02495465F0C985254E003C04B2C56D6FB173675F1152D218792D971A0FB991E0"
+    },
+    {
+      "file": "src/two-player/StoryObservation.cs",
+      "bytes": 11084,
+      "sha256": "2C52B2649CCBA2D85F66EB2F48912FFEBE47B59596AF68AD4BA5727974ED194A"
+    },
+    {
+      "file": "src/two-player/StoryReplayLedger.cs",
+      "bytes": 821,
+      "sha256": "9DF4707BA74FCE30CB0B5CA9A37A87A026D85F633E0F6F397600D1F20680CE0D"
+    },
+    {
+      "file": "src/two-player/StorySync.cs",
+      "bytes": 27368,
+      "sha256": "DD515481D902B4470398A3FA936E11C033B30E95497344703E276606965E5F96"
+    },
+    {
+      "file": "src/two-player/summarize-test-bundles.py",
+      "bytes": 5976,
+      "sha256": "1988F2AA7CC6E8F277E77C59DDCB7ECA6B7013D836DF7536E72010E1DFDA5129"
+    },
+    {
+      "file": "src/two-player/SyncProtocol.cs",
+      "bytes": 19575,
+      "sha256": "55CBB6FB795873B2F9FC118A2875C0E02409D51E3CD2A02AE9CEFE58ECED09DE"
+    },
+    {
+      "file": "src/two-player/test-pursuit.ps1",
+      "bytes": 61542,
+      "sha256": "F4E54D4EF276A46A2FAD7D32451F9D2ADBED4F0E69CE63E583A1338176CC32DE"
+    },
+    {
+      "file": "src/two-player/test-support.ps1",
+      "bytes": 19238,
+      "sha256": "F3878B8975ECBEB99BA7655461772A5D7B8A2A7D5514B698C2A150200A302C66"
+    },
+    {
+      "file": "src/two-player/test_gateway_lifetime.py",
+      "bytes": 5568,
+      "sha256": "251F26F3D723779F0B4B0E0DF52728EB086F5CCDC612EB84CD180E7A5AB486AF"
+    },
+    {
+      "file": "src/two-player/TimeFreezeSync.cs",
+      "bytes": 14320,
+      "sha256": "5C7FF23C941C7854A489B9AE716566EBDEE83864516E82A1B6A8233414F5EE20"
+    },
+    {
+      "file": "src/two-player/TrainingSession.cs",
+      "bytes": 7216,
+      "sha256": "52BBE07E95E138027E6B34060D00B7AFFAE3314E47FDDEB26603B151F12A8367"
+    },
+    {
+      "file": "src/two-player/TrapObjectSync.cs",
+      "bytes": 15286,
+      "sha256": "14DCD9033815672C5AF829D19280DD639A95E6CA05FC916B2C1738F0595A990A"
+    },
+    {
+      "file": "src/two-player/verify-skill-hooks.ps1",
+      "bytes": 6026,
+      "sha256": "6535353EFF1800FA807E9078B3CA669F1501D974FAB3E8E457AC3FB747F0B293"
+    },
+    {
+      "file": "src/two-player/客机一键加入.cmd",
+      "bytes": 100,
+      "sha256": "8DBF071AAEB9DDDCA57219B481715032D6B9E9C25D879520892DF72E1FCBA0F3"
+    },
+    {
+      "file": "src/two-player/房主一键开房.cmd",
+      "bytes": 93,
+      "sha256": "FCA9E51380DF107C7AE629C14F9364E697C0C8EBC2B88405770AD62588C47DCC"
+    },
+    {
+      "file": "src/two-player/收集房主测试结果.cmd",
+      "bytes": 120,
+      "sha256": "58D8F6D8D01B6DEBEAD95F5480F8F6B97666FDE17D1CE1F52401778C345A83B4"
+    },
+    {
+      "file": "tests/test-log-redaction.ps1",
+      "bytes": 9079,
+      "sha256": "EB6B3C762BA1D2D11395960F2BD887688C915A07C1697B921096294CD3DD4E54"
+    },
+    {
+      "file": "tests/test-steam-account.ps1",
+      "bytes": 1217,
+      "sha256": "8E0F9EE1756A33838CA6D8D824AC9EAEE4E06495246363FA4AF92727AF0BA29C"
+    },
+    {
+      "file": "tests/udp-parser-allocation-20261114.json",
+      "bytes": 1931,
+      "sha256": "7B4A8786B7C9184D80E4B5DDFC1FCC74CFB2C5F6F2B5BD5777D97BFE40675817"
+    },
+    {
+      "file": "third-party-dependencies.json",
+      "bytes": 16330,
+      "sha256": "B926A61A897B37B705EBB3A33495BE3EC32017537FD0BE119FFF34075DC843D2"
+    },
+    {
+      "file": "THIRD_PARTY_NOTICES.md",
+      "bytes": 5711,
+      "sha256": "1C34F70D9CDACE724F246749FA9B65BD07C2BB95101C3017F697EAEBF8631386"
+    },
+    {
+      "file": "VALIDATION.md",
+      "bytes": 7746,
+      "sha256": "80764C7CF6A2EB2FB3AEB6301ADE71E5FC2B726EF25DEFF9082D4178AEDB88C3"
+    }
+  ],
+  "asOf": "2026-11-14"
+}

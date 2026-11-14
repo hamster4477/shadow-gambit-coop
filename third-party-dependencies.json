@@ -1,0 +1,431 @@
+{
+  "audited_at": "2026-11-13",
+  "archive": "ShadowGambitCoop-OneClick-Full-MP1-20261113-unlimited-trial.zip",
+  "archive_sha256": "00f76d0b41983168335a5549c018c85b746e702fc0b55422fe931e8f69c31be4",
+  "payload_file_count": 366,
+  "payload_group_file_counts": {
+    "BepInEx/core/": 34,
+    "BepInEx/unity-libs/": 66,
+    "dotnet/": 187,
+    "ShadowGambitCoop/python/": 34
+  },
+  "license_notice_files": [
+    "ShadowGambitCoop/python/LICENSE.txt"
+  ],
+  "components": [
+    {
+      "name": "BepInEx",
+      "version": "6.0.0-be.682+910844a982dbb126d0c6544847424bc42fb7849c",
+      "license": "LGPL-2.1",
+      "files": [
+        "BepInEx/core/BepInEx.*.dll"
+      ],
+      "primary_sources": [
+        "https://raw.githubusercontent.com/BepInEx/BepInEx/910844a982dbb126d0c6544847424bc42fb7849c/LICENSE"
+      ],
+      "notes": "Exact commit license verified. Preserve license/notices and satisfy corresponding-source and replacement/relinking requirements for distributed libraries."
+    },
+    {
+      "name": "Il2CppInterop",
+      "version": "1.4.6-ci.389",
+      "license": "LGPL-3.0-only",
+      "files": [
+        "BepInEx/core/Il2CppInterop.*.dll"
+      ],
+      "primary_sources": [
+        "https://nuget.bepinex.dev/v3/package/il2cppinterop.runtime/1.4.6-ci.389/il2cppinterop.runtime.1.4.6-ci.389.nupkg",
+        "https://raw.githubusercontent.com/BepInEx/Il2CppInterop/v1.4.5/Directory.Build.props",
+        "https://raw.githubusercontent.com/BepInEx/Il2CppInterop/v1.4.5/COPYING.LESSER",
+        "https://raw.githubusercontent.com/BepInEx/Il2CppInterop/v1.4.5/LICENSE"
+      ],
+      "notes": "Exact Runtime nuspec confirms LGPL-3.0-only; historical v1.4.5 also carries COPYING.LESSER and matching package declaration. Root LICENSE alone contains GPL text and is not the complete licensing picture. Exact ci389 source revision still needs mapping before full binary distribution."
+    },
+    {
+      "name": "UnityDoorstop",
+      "version": "4.0.0",
+      "license": "LGPL-2.1",
+      "files": [
+        "winhttp.dll",
+        ".doorstop_version"
+      ],
+      "primary_sources": [
+        "https://raw.githubusercontent.com/NeighTools/UnityDoorstop/v4.0.0/LICENSE"
+      ],
+      "notes": "Do not apply Doorstop 3 CC0 license to Doorstop 4."
+    },
+    {
+      "name": "HarmonyX",
+      "version": "2.10.1",
+      "license": "MIT",
+      "files": [
+        "BepInEx/core/0Harmony.dll"
+      ],
+      "primary_sources": [
+        "https://raw.githubusercontent.com/BepInEx/HarmonyX/v2.10.1/LICENSE"
+      ],
+      "notes": ""
+    },
+    {
+      "name": "MonoMod",
+      "version": "22.05.01.01",
+      "license": "MIT",
+      "files": [
+        "BepInEx/core/MonoMod.RuntimeDetour.dll",
+        "BepInEx/core/MonoMod.Utils.dll"
+      ],
+      "primary_sources": [
+        "https://raw.githubusercontent.com/MonoMod/MonoMod/v22.05.01.01/LICENSE"
+      ],
+      "notes": ""
+    },
+    {
+      "name": "Mono.Cecil",
+      "version": "0.11.4.0",
+      "license": "MIT",
+      "files": [
+        "BepInEx/core/Mono.Cecil*.dll"
+      ],
+      "primary_sources": [
+        "https://raw.githubusercontent.com/jbevain/cecil/0.11.4/LICENSE.txt"
+      ],
+      "notes": ""
+    },
+    {
+      "name": "AsmResolver",
+      "version": "5.1.0",
+      "license": "MIT",
+      "files": [
+        "BepInEx/core/AsmResolver*.dll"
+      ],
+      "primary_sources": [
+        "https://raw.githubusercontent.com/Washi1337/AsmResolver/v5.1.0/LICENSE.md"
+      ],
+      "notes": ""
+    },
+    {
+      "name": "Iced",
+      "version": "1.18.0+2e21c4c1299f9f90b8fce53acb4710b6d474e46d",
+      "license": "MIT",
+      "files": [
+        "BepInEx/core/Iced.dll"
+      ],
+      "primary_sources": [
+        "https://raw.githubusercontent.com/icedland/iced/2e21c4c1299f9f90b8fce53acb4710b6d474e46d/LICENSE.txt"
+      ],
+      "notes": ""
+    },
+    {
+      "name": "Cpp2IL family",
+      "version": "2022.1.0-development.866+f87ccd188ec032cbba27763bf10ba43bb25eb4e8",
+      "license": "MIT",
+      "files": [
+        "BepInEx/core/Cpp2IL.Core.dll",
+        "BepInEx/core/LibCpp2IL.dll",
+        "BepInEx/core/StableNameDotNet.dll",
+        "BepInEx/core/WasmDisassembler.dll"
+      ],
+      "primary_sources": [
+        "https://raw.githubusercontent.com/SamboyCoding/Cpp2IL/f87ccd188ec032cbba27763bf10ba43bb25eb4e8/LICENSE"
+      ],
+      "notes": "StableNameDotNet metadata version is 0.1.0-development.866+f87ccd1."
+    },
+    {
+      "name": "AssetRipper.VersionUtilities",
+      "version": "1.3.1+3e5ee806808370156f641019e278b30a80ab5062",
+      "license": "MIT",
+      "files": [
+        "BepInEx/core/AssetRipper.VersionUtilities.dll"
+      ],
+      "primary_sources": [
+        "https://api.nuget.org/v3-flatcontainer/assetripper.versionutilities/1.3.1/assetripper.versionutilities.nuspec"
+      ],
+      "notes": "Exact version NuGet metadata declares MIT and matching repository commit."
+    },
+    {
+      "name": "Disarm",
+      "version": "2022.1.0-master.26+cb8877f0dc1eecd6cbfba219991f8b00be2d41bc",
+      "license": "MIT",
+      "files": [
+        "BepInEx/core/Disarm.dll"
+      ],
+      "primary_sources": [
+        "https://api.nuget.org/v3-flatcontainer/disarm/2022.1.0-master.26/disarm.nuspec"
+      ],
+      "notes": "Exact version NuGet metadata declares MIT and matching repository commit."
+    },
+    {
+      "name": "SemanticVersioning",
+      "version": "2.0.2",
+      "license": "MIT",
+      "files": [
+        "BepInEx/core/SemanticVersioning.dll"
+      ],
+      "primary_sources": [
+        "https://api.nuget.org/v3-flatcontainer/semanticversioning/2.0.2/semanticversioning.nuspec",
+        "https://raw.githubusercontent.com/adamreeve/semver.net/master/LICENSE"
+      ],
+      "notes": "Exact version nuspec points to upstream master LICENSE, which was verified MIT."
+    },
+    {
+      "name": "Capstone.NET binding",
+      "version": "2.1.0",
+      "license": "MIT",
+      "files": [
+        "BepInEx/core/Gee.External.Capstone.dll"
+      ],
+      "primary_sources": [
+        "https://api.nuget.org/v3-flatcontainer/gee.external.capstone/2.1.0/gee.external.capstone.nuspec",
+        "https://raw.githubusercontent.com/9ee1/Capstone.NET/master/LICENSE"
+      ],
+      "notes": "Exact version nuspec declares MIT. No separately named native Capstone binary occurs in payload; embedded native assets or dependency closure not certified by this inventory."
+    },
+    {
+      "name": "Dobby",
+      "version": "unknown bundled revision",
+      "license": "Apache-2.0",
+      "files": [
+        "BepInEx/core/dobby.dll"
+      ],
+      "primary_sources": [
+        "https://raw.githubusercontent.com/jmpews/Dobby/master/LICENSE"
+      ],
+      "notes": "Upstream license verified; exact bundled version/source still unconfirmed. Preserve Apache license and any applicable upstream NOTICE; document modifications if any."
+    },
+    {
+      "name": ".NET runtime",
+      "version": "6.0.7 @0ec02c8c96e2eda06dc5b5edfdbdba0f36415082",
+      "license": "MIT AND third-party notices",
+      "files": [
+        "dotnet/"
+      ],
+      "primary_sources": [
+        "https://raw.githubusercontent.com/dotnet/runtime/v6.0.7/LICENSE.TXT",
+        "https://raw.githubusercontent.com/dotnet/runtime/v6.0.7/THIRD-PARTY-NOTICES.TXT"
+      ],
+      "notes": "Both runtime license and third-party notices absent from audited package."
+    },
+    {
+      "name": "Python embedded Windows distribution",
+      "version": "3.13.9",
+      "license": "PSF-2.0 AND bundled third-party notices",
+      "files": [
+        "ShadowGambitCoop/python/"
+      ],
+      "primary_sources": [
+        "https://raw.githubusercontent.com/python/cpython/v3.13.9/LICENSE",
+        "https://docs.python.org/3.13/license.html"
+      ],
+      "notes": "Payload preserves full embedded distribution LICENSE.txt, including third-party and Windows runtime terms. Keep this full file rather than replacing it with only the shorter CPython root LICENSE."
+    },
+    {
+      "name": "Unity base libraries",
+      "version": "Unity 2021.3.25 reference/base libraries",
+      "license": "NOT CLEARED",
+      "files": [
+        "BepInEx/unity-libs/"
+      ],
+      "primary_sources": [],
+      "notes": "Not treated as MIT. Redistribution rights not established by this audit; exclude from public source/mod-only bundle and hold full installer pending verification."
+    }
+  ],
+  "core_dll_inventory": [
+    {
+      "path": "BepInEx/core/0Harmony.dll",
+      "sha256": "64c0107e10f57d34ec2f8097fcb04e3face1b06d6fc77a3df347c6bea06c43dd",
+      "bytes": 264192,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/AsmResolver.dll",
+      "sha256": "e84aeef5d63d26729d4ca5cf80abf6ef8376bec2f2370c5f97544225f2640053",
+      "bytes": 56832,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/AsmResolver.DotNet.dll",
+      "sha256": "d85eaa0e01e513469baf38d383bbf7e1c00874999c13a740721ee9798c18e73b",
+      "bytes": 486912,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/AsmResolver.PE.dll",
+      "sha256": "d311dcf58901db2c515ad6e4a5555018371e4f30a78fb31caa6b1131171bb8ce",
+      "bytes": 312832,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/AsmResolver.PE.File.dll",
+      "sha256": "2458656cfa416876b192421603ed92b64a985dd1395cabdf2c46af0314b54f02",
+      "bytes": 39424,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/AssetRipper.VersionUtilities.dll",
+      "sha256": "902a6e284952af51756914fe5a5972be40d8c949f8c55e4cd3b7b0fae8d49251",
+      "bytes": 20992,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/BepInEx.Core.dll",
+      "sha256": "4ac94e3f542fa2e4e5b04e02baade83f0c2c0fa9554fa2d9fd400a43a6c3a589",
+      "bytes": 132096,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/BepInEx.Preloader.Core.dll",
+      "sha256": "05b9269110489e77ca7dbaca236de14bfac1df4604ca6521516736b24095e8ad",
+      "bytes": 51712,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/BepInEx.Unity.Common.dll",
+      "sha256": "fdddd1ccf18ddcbba75846384a3038489b6866d4630852bc1e730bb173632fde",
+      "bytes": 12288,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/BepInEx.Unity.IL2CPP.dll",
+      "sha256": "ee6d111de516f39be43fde9f106d70b7a5fe32d94e801cf469ccb9d6c27abeff",
+      "bytes": 75776,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/Cpp2IL.Core.dll",
+      "sha256": "bd94848606a9258a10bc91a9c387984a9b35b31c3c3d54ad8f71c307d7c811d5",
+      "bytes": 305152,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/Disarm.dll",
+      "sha256": "15e4c49f00865b8a13dd75f4b2c66486c32f5eb28fb630023fb495db320ac93b",
+      "bytes": 97280,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/dobby.dll",
+      "sha256": "8015de7d867245a1095d13947a63763878e4cf5fd3d3089b63cc39200b055ded",
+      "bytes": 205312,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/Gee.External.Capstone.dll",
+      "sha256": "c52e2ac8d02a630dba7f2a31a0437463a88437917dd1aa2f39e7949c8d2ca98f",
+      "bytes": 293376,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/Iced.dll",
+      "sha256": "1f4b7851d77310880f1e279aecc0d7cc4d876027dc490779c7196e93f17bfda7",
+      "bytes": 1886720,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/Il2CppInterop.Common.dll",
+      "sha256": "957677521e2299dbca8a6aa04e6637db3654e0a642daec955a7dbe72fc51ad07",
+      "bytes": 40448,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/Il2CppInterop.Generator.dll",
+      "sha256": "6d2e7e9495405bf2d0bc4fc769968c6fb4e98e3acae919765890e6d1adc94090",
+      "bytes": 177152,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/Il2CppInterop.HarmonySupport.dll",
+      "sha256": "7479d788737e0ddd087f193855a30497ae0a2f2d141d19bdd8627afd5b350c2d",
+      "bytes": 24576,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/Il2CppInterop.Runtime.dll",
+      "sha256": "f78ab0220fd452b70145ab6a94b73dc93dec157d5621eadad0371d1a633d6738",
+      "bytes": 274944,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/LibCpp2IL.dll",
+      "sha256": "193695c3f7d35c7384c62675023419a15227fc0c40fef832a64ff430ef51da68",
+      "bytes": 251392,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/Mono.Cecil.dll",
+      "sha256": "769a59793d4b8885bbbfbc5aee8f57a0d4e34d275c56c60c03994309b87f67e9",
+      "bytes": 356864,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/Mono.Cecil.Mdb.dll",
+      "sha256": "61637f9940e5e336571cbf945be0f36d6d6050e06288df0f0232d93b26f0bde7",
+      "bytes": 39424,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/Mono.Cecil.Pdb.dll",
+      "sha256": "a5249a04ad8fd7dfd47e4d0a620aed0f7eb6051e1ddec102c541ca3e12f6e2a8",
+      "bytes": 89600,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/Mono.Cecil.Rocks.dll",
+      "sha256": "273292babd45f9f34de5054bd9cdfe1d859a7dbf6f4ad5974fe4ead70698ed5b",
+      "bytes": 24576,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/MonoMod.RuntimeDetour.dll",
+      "sha256": "ca675e4094697fc0d14d074bc7f40d1106f7b48e1fd6be60d2711c3e0d9b0a29",
+      "bytes": 112640,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/MonoMod.Utils.dll",
+      "sha256": "d6e16a47c06c02e62d2aab3d5f24a2f79db96c0cd8d386f13774745a002160b7",
+      "bytes": 193024,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/SemanticVersioning.dll",
+      "sha256": "a5b57607225a0ebde049e93469f49e5b2d07a7d602a03864ce3a72ccf57103a2",
+      "bytes": 34816,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/StableNameDotNet.dll",
+      "sha256": "886504c7b33178cb57722d72b3c413947349a4e8553573720c99e2f941455352",
+      "bytes": 27136,
+      "matches_installed_core": true
+    },
+    {
+      "path": "BepInEx/core/WasmDisassembler.dll",
+      "sha256": "421fb4075d8be9700cea8dbd9c973a947311f4d27291ca6fd718f184a5fe2c18",
+      "bytes": 20992,
+      "matches_installed_core": true
+    }
+  ],
+  "findings": [
+    {
+      "severity": "release blocker for full installer",
+      "finding": "Only Python license is present. BepInEx, Il2CppInterop, Doorstop licenses and corresponding-source delivery/access arrangements are absent. MIT/Apache/.NET notices also absent."
+    },
+    {
+      "severity": "release blocker for full installer",
+      "finding": "Unity base library redistribution has not been cleared. This report does not grant rights to game assets, game DLLs or generated interop files."
+    },
+    {
+      "severity": "scope condition",
+      "finding": "MIT may cover independently authored project code. It does not replace dependency licenses. LGPL shared-library linking permits application terms of choice subject to notices, replacement/relinking rights and all applicable source obligations."
+    },
+    {
+      "severity": "source export recommendation",
+      "finding": "Source-only GitHub export and mod-only distribution should exclude third-party/game binaries and give dependency/version/license links; separately audit any code copied from third parties."
+    }
+  ],
+  "limitations": [
+    "Not a complete transitive native-asset provenance audit.",
+    "Exact Il2CppInterop ci389 and Dobby source revisions need mapping for a redistributable full bundle.",
+    "MIT source compatibility assumes independently authored code rather than copying LGPL/GPL implementations."
+  ],
+  "scope": "Inventory of a historical test installer, not files bundled in this source repository."
+}

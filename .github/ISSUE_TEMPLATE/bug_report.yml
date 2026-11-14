@@ -1,0 +1,35 @@
+name: Bug report / 问题反馈
+description: Report a reproducible co-op problem / 反馈可复现的联机问题
+title: "[Bug] "
+body:
+  - type: dropdown
+    id: variant
+    attributes:
+      label: Variant / 版本分支
+      options:
+        - two-player / 双人版
+        - multiplayer MP1 / 多人试行版
+    validations:
+      required: true
+  - type: input
+    id: build
+    attributes:
+      label: Build and game version / 模组构建号和游戏版本
+    validations:
+      required: true
+  - type: input
+    id: topology
+    attributes:
+      label: Player count, affected role and transport / 人数、出问题的一端及连接方式
+      description: LAN, overlay, TCP, TCP+UDP or HTTPS; do not paste private room URLs.
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps, expected and observed results / 操作步骤、预期和实际现象
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Reviewed and redacted logs / 已检查并脱敏的日志
+      description: Do not attach raw dumps, saves or game files. 请勿上传原始转储、存档或游戏资源。

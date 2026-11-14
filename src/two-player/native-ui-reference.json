@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "basis": "host local files; comparison only, not Steam authenticity proof",
+  "files": [
+    {
+      "path": "GameAssembly.dll",
+      "size": 76559360,
+      "sha256": "B2F84A4F31F998C4FE1ED25EA248136BE3CCBBC70EE8B6C567F05D5EF2698A45"
+    },
+    {
+      "path": "UnityPlayer.dll",
+      "size": 29363112,
+      "sha256": "81BB468AE0D29C2C6DD3C0928FA0EE24F9058D0B3491563B4ECC396B2115D156"
+    },
+    {
+      "path": "ShadowGambit_TCC_Data/il2cpp_data/Metadata/global-metadata.dat",
+      "size": 17491604,
+      "sha256": "708AB60B6E1ADAF381EB34C4BEEC6F14A124A634E2A824236E5878B6469805CE"
+    },
+    {
+      "path": "ShadowGambit_TCC_Data/StreamingAssets/aa/StandaloneWindows64/14d01ed42336440221966998e9451392_monoscripts.bundle",
+      "size": 230784,
+      "sha256": "04D36E1B95EF3C489C3E9D0126DB401B77E48B474C312582808A837B8F25C8BE"
+    },
+    {
+      "path": "ShadowGambit_TCC_Data/StreamingAssets/aa/StandaloneWindows64/group_ui_000_assets_all.bundle",
+      "size": 1064848,
+      "sha256": "4B255BD233447616C60172F041BD743AD78D8B5EBDACDA5D92E147C9EE7B211B"
+    },
+    {
+      "path": "ShadowGambit_TCC_Data/StreamingAssets/aa/StandaloneWindows64/group_ui_000_scenes_all.bundle",
+      "size": 35233232,
+      "sha256": "2F4DE36D3B437FD726013F12B7CE490D95D99C80A2189540F7C3348F317CC561"
+    },
+    {
+      "path": "ShadowGambit_TCC_Data/StreamingAssets/aa/StandaloneWindows64/group_ui_001_assets_all.bundle",
+      "size": 14429200,
+      "sha256": "AE734AEB8A933F65E877319B5F6D986021FEA5389E0C2B6E9340DBBD381BB21B"
+    },
+    {
+      "path": "ShadowGambit_TCC_Data/StreamingAssets/aa/StandaloneWindows64/group_ui_002_assets_all.bundle",
+      "size": 43871936,
+      "sha256": "80CE11F5FB771F6F99EBE74A64B39FE05BC86164B860F77E3514FB1A614A7E97"
+    },
+    {
+      "path": "ShadowGambit_TCC_Data/StreamingAssets/aa/StandaloneWindows64/group_ui_003_assets_all.bundle",
+      "size": 19832752,
+      "sha256": "9AF9B2CCB51DCB4B29E3CA1F2D5E7875471FC7C7AFAAD7B95815EBD45423F08A"
+    },
+    {
+      "path": "ShadowGambit_TCC_Data/StreamingAssets/aa/StandaloneWindows64/group_ui_004_assets_all.bundle",
+      "size": 11282320,
+      "sha256": "48521F6EDC1FCCA3F8726A6E74636B8861059429CD132C4A480F4548226C7EEF"
+    },
+    {
+      "path": "ShadowGambit_TCC_Data/StreamingAssets/aa/StandaloneWindows64/group_ui_005_assets_all.bundle",
+      "size": 89227360,
+      "sha256": "2F84688C5809755A92B6FACA62B60C4DAC73FF41E42FA74677E13B177027CE2D"
+    },
+    {
+      "path": "ShadowGambit_TCC_Data/StreamingAssets/aa/StandaloneWindows64/group_ui_006_assets_all.bundle",
+      "size": 16878416,
+      "sha256": "6E572C46B0DD3B34A4357B33CE0CAD625B880D83854D98DE4A25570501F791E0"
+    },
+    {
+      "path": "ShadowGambit_TCC_Data/StreamingAssets/aa/StandaloneWindows64/group_ui_007_assets_all.bundle",
+      "size": 17786192,
+      "sha256": "E1461D3820ED5376D9B1A5A4152D6C5DBBA58533AA005513D81971B17F8EFFC9"
+    }
+  ]
+}

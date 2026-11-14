@@ -1,0 +1,837 @@
+{
+  "schema": 1,
+  "skills": [
+    {
+      "code": "DE",
+      "skill": "UseDoorEnter",
+      "geometry": false,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "DX",
+      "skill": "UseDoorExit",
+      "geometry": false,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "DW",
+      "skill": "UseDoorWalkthrough",
+      "geometry": false,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "CE",
+      "skill": "UseClimbEnter",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "CX",
+      "skill": "UseClimbExit",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "CM",
+      "skill": "UseClimbMove",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "JP",
+      "skill": "UseJump",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "JA",
+      "skill": "UseJumpAcross",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "JD",
+      "skill": "UseJumpDown",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "HI",
+      "skill": "UseHiding",
+      "geometry": false,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "GE",
+      "skill": "UseGeneric",
+      "geometry": false,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "EX",
+      "skill": "ExplicitUse",
+      "geometry": false,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "AU",
+      "skill": "AutoUse",
+      "geometry": false,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "BT",
+      "skill": "UseCarryBodyThrow",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "BD",
+      "skill": "UseCarryBodyDrop",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "OP",
+      "skill": "UseCarryObjectPickup",
+      "geometry": false,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "OD",
+      "skill": "UseCarryObjectDrop",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "TD",
+      "skill": "UseCarryTorchDrop",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "TT",
+      "skill": "UseCarryTorchThrow",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "TU",
+      "skill": "TieUp",
+      "geometry": false,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "WH",
+      "skill": "Whistle",
+      "geometry": false,
+      "point": true,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "WS",
+      "skill": "WhistleStone",
+      "geometry": false,
+      "point": true,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "BA",
+      "skill": "BaitDistract",
+      "geometry": false,
+      "point": true,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "BN",
+      "skill": "BaitTanuki",
+      "geometry": false,
+      "point": true,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "CA",
+      "skill": "CannonAttack",
+      "geometry": false,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "CL",
+      "skill": "CannonLoad",
+      "geometry": false,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "CS",
+      "skill": "CannonShoot",
+      "geometry": false,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "CEY",
+      "skill": "CannonEmpty",
+      "geometry": false,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": true
+    },
+    {
+      "code": "CR",
+      "skill": "CannonRecall",
+      "geometry": false,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "CEO",
+      "skill": "CannonEmptyOwner",
+      "geometry": false,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": true
+    },
+    {
+      "code": "GN",
+      "skill": "Gun",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "SK",
+      "skill": "SnipeKill",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "SN",
+      "skill": "SnipeKnockout",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "BK",
+      "skill": "BlinkKill",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "BNK",
+      "skill": "BlinkKnockout",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "BLK",
+      "skill": "BlinkKillLong",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "BLN",
+      "skill": "BlinkKnockoutLong",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "TB",
+      "skill": "ThrowBush",
+      "geometry": true,
+      "point": true,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "TN",
+      "skill": "ThrowNoise",
+      "geometry": true,
+      "point": true,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "TM",
+      "skill": "TeleportPlaceMark",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": true,
+      "nullTarget": false
+    },
+    {
+      "code": "TK",
+      "skill": "TeleportKill",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": true
+    },
+    {
+      "code": "TKN",
+      "skill": "TeleportKnockout",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": true
+    },
+    {
+      "code": "TMV",
+      "skill": "TeleportMove",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": true
+    },
+    {
+      "code": "S01",
+      "skill": "GunGatling",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S02",
+      "skill": "GunShootObject",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S03",
+      "skill": "HealthPack",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S04",
+      "skill": "ThrowTNT",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": true,
+      "nullTarget": false
+    },
+    {
+      "code": "S05",
+      "skill": "Explosive",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S06",
+      "skill": "UseJumpAttack",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S07",
+      "skill": "KillOvertake",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S08",
+      "skill": "KnockoutOvertake",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S09",
+      "skill": "OvertakeByOvertaken",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S10",
+      "skill": "BaitCry",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": true
+    },
+    {
+      "code": "S11",
+      "skill": "BaitKill",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S12",
+      "skill": "BaitKnockout",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S13",
+      "skill": "BarrelBait",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": true
+    },
+    {
+      "code": "S14",
+      "skill": "BarrelRoll",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S15",
+      "skill": "Blind",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": true,
+      "nullTarget": false
+    },
+    {
+      "code": "S16",
+      "skill": "BlinkMove",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S17",
+      "skill": "Catatonic",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S18",
+      "skill": "CharmingGhost",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S19",
+      "skill": "CharmingGhostCancel",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": true
+    },
+    {
+      "code": "S20",
+      "skill": "Control",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S21",
+      "skill": "ControlCancel",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": true
+    },
+    {
+      "code": "S22",
+      "skill": "DigKill",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S23",
+      "skill": "DigKnockout",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S24",
+      "skill": "DigKnock",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S25",
+      "skill": "DigIn",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S26",
+      "skill": "DigOut",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S27",
+      "skill": "DigKillHideCorpse",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S28",
+      "skill": "DigPortalExit",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S29",
+      "skill": "DigPortalHide",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S30",
+      "skill": "Disguise",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S31",
+      "skill": "DistractTalk",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S32",
+      "skill": "DistractFollow",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S33",
+      "skill": "Explode",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": true
+    },
+    {
+      "code": "S34",
+      "skill": "Fear",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": true
+    },
+    {
+      "code": "S35",
+      "skill": "Fishing",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S36",
+      "skill": "FootprintTrailWithVisibilityToggle",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": true
+    },
+    {
+      "code": "S37",
+      "skill": "FreezeDistract",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S38",
+      "skill": "FreezeKill",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S39",
+      "skill": "FreezeKnockout",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S40",
+      "skill": "GhostCallBack",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": true
+    },
+    {
+      "code": "S41",
+      "skill": "GhostLure",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S42",
+      "skill": "GhostPlace",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S43",
+      "skill": "LineTrapKill",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": true,
+      "nullTarget": false
+    },
+    {
+      "code": "S44",
+      "skill": "LineTrapKnockout",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": true,
+      "nullTarget": false
+    },
+    {
+      "code": "S45",
+      "skill": "LovePotion",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": true,
+      "nullTarget": false
+    },
+    {
+      "code": "S46",
+      "skill": "Multikill",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S47",
+      "skill": "Overtake",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S48",
+      "skill": "OvertakeCancelPaused",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": true
+    },
+    {
+      "code": "S49",
+      "skill": "OvertakeCry",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S50",
+      "skill": "OvertakeDistractTalk",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S51",
+      "skill": "OvertakeFreeze",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S52",
+      "skill": "OvertakeGun",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S53",
+      "skill": "OvertakeSnipe",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S54",
+      "skill": "OvertakeWhistle",
+      "geometry": true,
+      "point": true,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S55",
+      "skill": "Revive",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S56",
+      "skill": "TimeFreeze",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S57",
+      "skill": "ToggleLightSource",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": true
+    },
+    {
+      "code": "S58",
+      "skill": "TriggerAlarm",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": true
+    },
+    {
+      "code": "S59",
+      "skill": "WalkAway",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "S60",
+      "skill": "WalkTowards",
+      "geometry": true,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    },
+    {
+      "code": "CH",
+      "skill": "UseCharacterInHub",
+      "geometry": false,
+      "point": false,
+      "optionalEntityPoint": false,
+      "nullTarget": false
+    }
+  ]
+}

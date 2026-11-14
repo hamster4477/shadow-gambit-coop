@@ -2,7 +2,24 @@
 
 **English** | [简体中文](README.zh-CN.md)
 
-Unofficial experimental co-op for **Shadow Gambit: The Cursed Crew**, using BepInEx IL2CPP. The host runs the authoritative game; guests send commands and receive state and checkpoint updates. Several scenarios are still untested in a real game session; do not describe this as a stable release.
+Unofficial two-player co-op for **Shadow Gambit: The Cursed Crew**, built on BepInEx IL2CPP. One player hosts and runs the real game; the other sends commands and receives state and checkpoint updates, so both of you play the same mission instead of watching separate copies of it.
+
+**Status: test builds.** It is playable enough to finish missions together, but it is not a finished release. The newest features have had no two-PC validation, and a number of skill and scene combinations are still unchecked.
+
+## What it does today
+
+- Host-authoritative co-op: movement, ground targets, skills, melee, interactions, carried bodies and guard behaviour.
+- Shared crew ownership and selection, including claiming unclaimed crew and the single-crew case.
+- Checkpoint transfer, save/load and scene handover, with story waits kept in sync.
+- Scene pings, so one player can point at a spot without a microphone.
+- Steam entry with single-player, create-room and join-room. `F11` disconnects, `F7` resumes hosting, `F6` reconnects the guest. `F8` is left alone and stays the game's own quickload.
+
+## What is still rough
+
+- Dense enemy scenes: with dozens of guards nearby, distant guards turn in visible steps.
+- The ping feature has never been through a real two-PC session.
+- Skills and scenes are individually playable but their combinations are not all tested; see [VALIDATION.md](VALIDATION.md).
+- A separate multiplayer (3+ players) experiment lives in `src/multiplayer`. It shares the plugin name with this build and is not a superset of these fixes.
 
 ## Versions
 

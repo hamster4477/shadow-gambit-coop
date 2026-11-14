@@ -39,6 +39,8 @@ for notice in ('LICENSE', 'README.md', 'THIRD_PARTY_NOTICES.md', 'RELEASE_REVIEW
 manifest = dict(buildId=name, dllSha256=plugin_hash, nativeGameplay='pending',
                 entries={key: sha(value) for key, value in payload.items()})
 payload['ShadowGambitCoop/unified-test-manifest.json'] = json.dumps(manifest, indent=2).encode('utf-8-sig')
+if (repo / 'FORUM-POST.md').is_file():
+    payload['FORUM-POST.md'] = (repo / 'FORUM-POST.md').read_bytes()
 payload['INSTALL.txt'] = ('''Shadow Gambit Co-op - mod-only package / 纯模组包
 
 1. Close the game on every PC. / 所有电脑先完全退出游戏。
@@ -58,6 +60,7 @@ BepInEx is not redistributed in this package; it is fetched from builds.bepinex.
 BepInEx downloads the Unity base libraries itself on the first game launch (needs network once).
 Unity 基础库由 BepInEx 在首次启动游戏时自行下载，需要联网一次。
 No saves or runtime/room history are included. See THIRD_PARTY_NOTICES and RELEASE_REVIEW.
+An English announcement you can post on a forum is in FORUM-POST.md.
 ''').encode('utf-8-sig')
 target = repo / 'artifacts' / f'ShadowGambitCoop-{name}-mod-only.zip'
 with zipfile.ZipFile(target, 'w', zipfile.ZIP_DEFLATED) as archive:

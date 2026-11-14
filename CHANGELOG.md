@@ -17,7 +17,7 @@ Unreleased work and open issues are tracked in the repository issues, not here.
 
 | Version | Date | Contents |
 | --- | --- | --- |
-| `v0.9.0-mp1` | 2026-11-14 | Independent multiplayer (3+ players) experiment, MP1 baseline. **Does not include** the 0.8.39–0.8.42 two-player fixes except the shared Steam-account constant fix. Never played on more than two PCs. |
+| `mp1-0.9.0` | 2026-11-14 | Independent multiplayer (3+ players) experiment, MP1 baseline. **Does not include** the 0.8.39–0.8.42 two-player fixes except the shared Steam-account constant fix. Never played on more than two PCs. |
 
 The two lines share the plugin GUID and DLL file name, so a single install can only hold one of them.
 
@@ -42,6 +42,6 @@ GitHub 的发布列表按 tag 所指提交的时间排序，而不是上传时�
 
 | 版本 | 日期 | 内容 |
 | --- | --- | --- |
-| `v0.9.0-mp1` | 2026-11-14 | 独立多人（3 人以上）实验，MP1 基线。**不包含** 0.8.39–0.8.42 的双人修复，只带上共用的 Steam 账号常量修复。从未在超过两台机器上玩过。 |
+| `mp1-0.9.0` | 2026-11-14 | 独立多人（3 人以上）实验，MP1 基线。**不包含** 0.8.39–0.8.42 的双人修复，只带上共用的 Steam 账号常量修复。从未在超过两台机器上玩过。 |
 
 两条线共用插件 GUID 和 DLL 文件名，同一次安装只能放其中一个。

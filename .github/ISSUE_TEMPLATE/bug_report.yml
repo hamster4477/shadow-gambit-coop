@@ -33,3 +33,8 @@ body:
     attributes:
       label: Reviewed and redacted logs / 已检查并脱敏的日志
       description: Do not attach raw dumps, saves or game files. 请勿上传原始转储、存档或游戏资源。
+  - type: markdown
+    attributes:
+      value: |
+        需要私下反馈（房间链接、账号信息、崩溃转储等）请发邮件到 **hamster4477@qq.com**，不要贴在公开 issue 里。
+        For private reports (room URLs, account details, crash dumps), email **hamster4477@qq.com** instead of posting them here.

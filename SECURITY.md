@@ -8,4 +8,6 @@ Keep invitations and full room URLs private. Native TCP and UDP do not provide T
 
 The log collector best-effort redacts room addresses, user paths and account identifiers, but it cannot guarantee that every new log format is recognised. Please do not post raw crash dumps, entire game directories, saves, process environment dumps or account profiles in public issues; they may contain private data or copyrighted game material. Always inspect the collector's output before publishing it.
 
-If private vulnerability reporting is enabled for the repository, use its Security tab for confidential reports. Otherwise, first open an issue without sensitive data to arrange private disclosure. No private contact address is invented by this source export.
+Report vulnerabilities and other sensitive problems privately to **hamster4477@qq.com**. Use the repository's Security tab instead if private vulnerability reporting is enabled. If you prefer a public issue, open one without sensitive data and we can move the details to email.
+
+Never paste room URLs, account identifiers, raw dumps or full log bundles into a public thread, even when you believe they are redacted.

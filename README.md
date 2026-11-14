@@ -42,7 +42,7 @@ pwsh -NoProfile -File .\scripts\Test.ps1
 
 Tests use temporary fixtures and loopback networking; some environments require permission to open local sockets. Native test doubles do not prove in-game rendering, skill or scene correctness.
 
-For a first multiplayer session use one host and two guests, then check exclusive crew selection, movement and skills, join/leave, save and load, returning to the ship and story waits in that order. Report issues through the [issue templates](.github/ISSUE_TEMPLATE) and inspect the log collector's output for private data before sharing it.
+For a first multiplayer session use one host and two guests, then check exclusive crew selection, movement and skills, join/leave, save and load, returning to the ship and story waits in that order. Report issues through the [issue templates](.github/ISSUE_TEMPLATE) or by email to **hamster4477@qq.com**, and inspect the log collector's output for private data before sharing it.
 
 ## Network
 

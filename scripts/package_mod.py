@@ -23,7 +23,7 @@ for item in json.loads((source / 'runtime-files.json').read_text(encoding='utf-8
     path = PurePosixPath(item)
     if path.is_absolute() or '..' in path.parts or ':' in item or '\\' in item:
         raise ValueError('Unsafe runtime path')
-    if path.suffix not in ('.cs', '.ps1', '.py', '.vbs', '.cmd', '.json', '.wav'):
+    if path.suffix not in ('.cs', '.ps1', '.py', '.vbs', '.cmd', '.json', '.wav', '.txt'):
         raise ValueError('Unexpected runtime file type')
     payload['ShadowGambitCoop/' + item] = (build / item).read_bytes()
 payload['BepInEx/plugins/ShadowGambitCoop.MoveProbe.dll'] = (build / 'staging/ShadowGambitCoop.MoveProbe.dll').read_bytes()
@@ -58,6 +58,8 @@ BepInEx is not redistributed in this package; it is fetched from builds.bepinex.
 BepInEx downloads the Unity base libraries itself on the first game launch (needs network once).
 Unity 基础库由 BepInEx 在首次启动游戏时自行下载，需要联网一次。
 No saves or runtime/room history are included. See THIRD_PARTY_NOTICES and RELEASE_REVIEW.
+Full manual / 完整手册: ShadowGambitCoop\\Networking-Guide.txt (EN)
+                             ShadowGambitCoop\\通用组网入口说明.txt (中文)
 ''').encode('utf-8-sig')
 target = repo / 'artifacts' / f'ShadowGambitCoop-{name}-mod-only.zip'
 with zipfile.ZipFile(target, 'w', zipfile.ZIP_DEFLATED) as archive:

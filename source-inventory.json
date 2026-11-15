@@ -102,8 +102,8 @@
     },
     {
       "file": "scripts/package_mod.py",
-      "bytes": 4669,
-      "sha256": "307E4D5B3B8566BB3429FCDDCB2C69E017B8B83CF54C9E71C23199A82F693623"
+      "bytes": 4834,
+      "sha256": "F696C072D18FA6828C2A01A8D2C777C9C5EE70FA0FFB10DC93BFED7D978C7A8E"
     },
     {
       "file": "src/multiplayer/ActorOrderReceipt.cs",
@@ -1501,6 +1501,11 @@
       "sha256": "F3F629496561EE15C93E12EBE7E1457681A656F05041E4F8B15F146F1E6885FE"
     },
     {
+      "file": "src/two-player/Networking-Guide.txt",
+      "bytes": 7507,
+      "sha256": "3D8E9A7A2BEFEC98035AA2CEEB9CA154862801B59D824FE10B20B22D3703566A"
+    },
+    {
       "file": "src/two-player/PeerPace.cs",
       "bytes": 4182,
       "sha256": "067B378EB0D8B37363B6A205C6CE22887F9B300083F396AA0CD0AA118CEC5AB2"
@@ -1524,6 +1529,11 @@
       "file": "src/two-player/PlanningWire.cs",
       "bytes": 3803,
       "sha256": "9FC36D87D5A79235AC9DDE3167D2B5E8180602A9B3888BD033392284AB5BC024"
+    },
+    {
+      "file": "src/two-player/README-ZH-EN.txt",
+      "bytes": 918,
+      "sha256": "92B3AAA83A2322D1A28DA2E9EC00752C9A49919D9870A592251CA13CED1EEECC"
     },
     {
       "file": "src/two-player/ReinforcementSync.cs",
@@ -1757,8 +1767,8 @@
     },
     {
       "file": "src/two-player/runtime-files.json",
-      "bytes": 1043,
-      "sha256": "C18666CBA81BFD8CB0458DCBDF7CE3213AD247424CFE224E40CB7CF6760AF998"
+      "bytes": 1152,
+      "sha256": "1435536065BD5864BBB33E0FBDDA37EF54E00751EE875BA1FAF282B17057CE91"
     },
     {
       "file": "src/two-player/save_transfer.py",
@@ -1994,6 +2004,11 @@
       "file": "src/two-player/收集房主测试结果.cmd",
       "bytes": 120,
       "sha256": "58D8F6D8D01B6DEBEAD95F5480F8F6B97666FDE17D1CE1F52401778C345A83B4"
+    },
+    {
+      "file": "src/two-player/通用组网入口说明.txt",
+      "bytes": 7133,
+      "sha256": "8ED43784330A8A89A41FE13E39F3EA62D71F17B73575638F8724541631151A64"
     },
     {
       "file": "tests/test-log-redaction.ps1",

@@ -15,8 +15,10 @@
   "media/bell_b.wav",
   "native-ui-reference.json",
   "native_tcp.py",
+  "Networking-Guide.txt",
   "ping_broker.py",
   "room-address.ps1",
+  "README-ZH-EN.txt",
   "save_transfer.py",
   "send_move.py",
   "session-next/GuestPrepareProgress.cs",
@@ -35,5 +37,6 @@
   "test-support.ps1",
   "\u5ba2\u673a\u4e00\u952e\u52a0\u5165.cmd",
   "\u623f\u4e3b\u4e00\u952e\u5f00\u623f.cmd",
-  "\u6536\u96c6\u623f\u4e3b\u6d4b\u8bd5\u7ed3\u679c.cmd"
+  "\u6536\u96c6\u623f\u4e3b\u6d4b\u8bd5\u7ed3\u679c.cmd",
+  "\u901a\u7528\u7ec4\u7f51\u5165\u53e3\u8bf4\u660e.txt"
 ]

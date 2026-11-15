@@ -1,0 +1,80 @@
+﻿Shadow Gambit Co-op Mod · Public Test Build
+S20-20261113-checkpoint-retry
+
+This is an unofficial two-player co-op test build, not a stable release.
+Both PCs need the game and the same mod build. Match game versions and required DLC content.
+
+First installation
+   Close the game, then extract the entire OneClick ZIP to a folder.
+   Run Install.cmd (or 一键安装.cmd). The installer finds the Steam game folder, or asks you to select the folder containing ShadowGambit_TCC.exe.
+   Setup copies your Steam launch option and shows instructions. Paste it into Steam → game Properties → General → Launch Options.
+   Launch through Steam and choose Single player, Host a room, or Join a room.
+If setup did not appear, run ShadowGambitCoop/Setup-Steam.cmd in the game folder, then paste the launch option.
+
+The full package includes Python 3.13.9 x64, BepInEx and Unity 2021.3.25 base libraries. No separate Python installation or PATH change is needed.
+The first launch still generates local interop caches and can take longer. The console is hidden by default; file logging remains enabled.
+The installer verifies files and backs up overwritten files. No saves are installed. The package contains no author's progress, address history or room data.
+Installation backups are in ShadowGambitCoop/backups/easy-install-* under the game folder.
+
+Updating an existing installation
+Close the game on both PCs. Extract the Update ZIP into the game root and replace matching files; do not replace only the DLL.
+The Update package does not include the framework or Python. Use OneClick for a first install. Existing Steam launch options stay valid.
+
+Hosting and joining
+The host creates a room, loads their save or ship, and keeps the game running. The guest then chooses Join a room.
+Guests receive the host progress in profile slot 3, with the previous slot backed up before replacement. Start the game normally once with that Steam account to create a profile before joining.
+After joining, wait for the automatic import. Do not manually Continue or load a local save. Connection, loading and waiting notices appear at the top.
+
+LAN, hotspot or virtual LAN:
+Connect both PCs to the same network and select its adapter on the first screen. The guest clicks Find a room, or enters the host's virtual IP.
+If discovery fails, check that the host room is open, the selected adapter is correct, and the co-op program is allowed through the firewall on that network.
+
+Port-forwarding tunnel (raw TCP by default):
+The host creates a TCP tunnel targeting 127.0.0.1:38479. No HTTPS or HTTPS subdomain is required.
+Share the tunnel's public host:port, e.g. room.example:54321. The guest enters it with HTTPS unchecked. Pairing is automatic; no separate room ID is needed.
+The first screen's adapter selection does not determine the tunnel endpoint. Address history is stored locally for reuse.
+UDP is optional: create a UDP tunnel to 127.0.0.1:38479 and enter its public host:port in the guest UDP field. In raw TCP mode, blank means probe UDP at the same public host:port; failure keeps TCP working.
+
+Retained HTTP/HTTPS endpoint:
+The legacy HTTP/HTTPS service uses TCP 38477, not raw TCP port 38479. HTTPS tunnels need a valid certificate; check HTTPS on the guest.
+While paused, the host can open HTTPS invitation, enter the public HTTPS endpoint and copy an invite. The guest pastes it into the address field. Invites last five minutes.
+LAN discovery uses UDP 38478. Do not enter it as the game-state port.
+
+In-game controls
+Use the native portraits, number keys, box selection and ability bar. A crew member selected by the other player cannot be controlled simultaneously; switching releases idle crew.
+On first entry, the guest selects the assigned crew member. With one crew member, the other player spectates; control can be handed over.
+Only the host controls fast-forward. The guest follows the host speed; local guest fast-forward input is disabled. Independent training is exempt.
+F6: reconnect to the last guest room from the main menu. F11: disconnect. F7: resume hosting from the menu or a mission; binding waits for scene readiness. F8 remains the native quickload key.
+Shadow Mode entry, exit and execution are synchronized. Training deck tutorials run separately; mission selection waits while someone is training, and co-op resumes on return.
+The extra right-side crew list, coordinates and ownership counters are removed. Essential waiting notices, main-menu reconnect and paused invitations remain.
+
+Reporting issues
+After exit, the guest normally receives a Coop-Guest-date-id.zip in Downloads. If missing, run ShadowGambitCoop/Collect-Guest.cmd.
+The host runs ShadowGambitCoop/Collect-Host.cmd (or 收集房主测试结果.cmd). It prints the output path.
+Send both sides' logs and describe who acted, the mission, character, ability and reproduction steps. Collect before restarting if possible.
+Main log: BepInEx/LogOutput.log. Launcher logs: ShadowGambitCoop/session-next/runtime/steam-launch/.
+Logs can contain local paths, timestamps and network diagnostics. Review them before sharing. Do not publish your entire game or save folder.
+
+Single player
+Choose Single player in the launcher to disable co-op auto-connect for that launch. Clearing Steam launch options alone does not remove the installed plugin.
+To disable the framework entirely, close the game, rename winhttp.dll in the game root to winhttp.dll.disabled, and clear Steam launch options. Rename it back and rerun setup to restore.
+
+Checks requested for this build:
+  Zagan's D freeze should not restart the victim animation repeatedly, and should end normally.
+  Guest initial selection should match the assigned crew, without an invisible slot-two reservation.
+  Guests cannot fast-forward independently; host speed still propagates. Check bilingual UI, installation and log collection.
+Compilation, native interface checks and automated checks have passed; these changes still need real two-PC testing.
+
+Port compatibility
+Raw TCP and UDP now share local port 38479. HTTP/HTTPS stays on TCP 38477. Legacy UDP 38477 remains available.
+TCP and UDP tunnels are still separate; public ports are assigned by the provider. Enter UDP separately if different. TCP alone remains supported.
+
+Performance changes in this build
+  Skip absent mission-selection, landing, main-menu and ship-only object searches during active missions. Initialization and scene transitions retain their discovery paths.
+  Coalesce small native TCP frame writes. Large saves keep separate body writes to avoid another full copy. Wire format and state fields stay compatible.
+  Character, enemy and ability synchronization rates are unchanged. FPS and latency improvements require comparison on the same PC, scene and network.
+  Reuse the loopback backend connection per native TCP channel; refresh it after idle periods and do not automatically replay an operation with an uncertain result.
+
+Checkpoint retry fix
+Fix cancellation of an unfinished checkpoint after restarting the guest, when its old temporary bridge URL is no longer valid. The verified new connection can cancel only the same room's previous request, never a different room.
+Checkpoint integration checks: 21 native TCP and 16 HTTP tests; also 22 cancellation-target checks and one real obsolete-bridge recovery test passed. Native game events are simulated; real two-PC gameplay still needs verification.
